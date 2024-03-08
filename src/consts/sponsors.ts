@@ -3,7 +3,7 @@ export const SPONSORS = [
 		id: "logoFunes",
 		name: "Alcaldia Municipal de Funes",
 		url: "https://www.funes-narino.gov.co/",
-		w:40,
+		w:28,
 
 	},
 	{
@@ -16,13 +16,13 @@ export const SPONSORS = [
 		id: "losPaisitas",
 		name: "Corporación Deportiva Los Paisitas de Medellín",
 		url: "https://festivaldefestivales.com/",
-		w:40,
+		w:28,
 	},
 	{
 		id: "futurasEstrellas",
 		name: "Escuela de Fútbol Futuras Estrellas Corporacion Social y Deportiva",
 		url: "https://www.facebook.com/oscararmando.futurasestrellas",
-		w:24,
+		w:28,
 	},
 	{
 		id: "alianzaSurena",
