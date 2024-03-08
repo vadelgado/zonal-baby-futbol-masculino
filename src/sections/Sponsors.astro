@@ -6,7 +6,7 @@ import { SPONSORS } from "@/consts/sponsors"
 
 	<div class="mt-12 grid select-none grid-cols-2 gap-8 md:grid-cols-3">
 		{
-			SPONSORS.map(({ id, name, url }) => (
+			SPONSORS.map(({ id, name, url,w }) => (
 				<a
 					class="company-link group relative flex h-24 items-center justify-center overflow-hidden md:h-32"
 					title={`Visita la página de ${name}`}
@@ -18,7 +18,7 @@ import { SPONSORS } from "@/consts/sponsors"
 						loading="lazy"
 						src={`/${id}.webp`}
 						alt={`Logo de ${name}`}
-						class="company-logo w-40 h-auto px-4 transition group-hover:scale-110"
+						class={`company-logo  w-${w} h-auto px-4 transition group-hover:scale-110`}
 					/>
 				</a>
 			))
