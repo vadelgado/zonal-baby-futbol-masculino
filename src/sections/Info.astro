@@ -11,7 +11,7 @@
     aria-label="Buscanos En Facebook"
   >
     <svg
-      class="text-pretty detect-in-viewport"
+      class="facebook text-pretty detect-in-viewport hover:text-blue-600"
       width="78"
       height="91"
       fill="none"
@@ -89,38 +89,20 @@
   svg {
     @apply text-pretty;
   }
-
-  @supports (animation-timeline: view()) {
-    svg {
-      animation-timeline: view();
-      animation-name: show;
-      animation-timing-function: ease-in;
-    }
-
-    :not(a:hover) > .twitch-link {
-      animation-timeline: view(block);
-      animation-name: show;
-      animation-timing-function: ease-in;
-    }
-  }
-
   @media (prefers-reduced-motion: reduce) {
     svg {
-      animation-name: none;
+      view-timeline-name: --facebook;
+      view-timeline-axis: block;
+
+      animation-timeline: --facebook;
+
+      animation-name: show;
     }
   }
 
   @keyframes show {
-    from {
-      @apply text-pretty;
-    }
-
-    50% {
-      @apply text-pretty;
-    }
-
-    100% {
-      @apply text-pretty;
+    to{
+      color: blue;
     }
   }
 </style>
