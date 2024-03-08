@@ -1,0 +1,40 @@
+<section
+  class="mt-32 mx-auto flex flex-col justify-center items-center text-center text-black"
+>
+  <h2 class="uppercase text-5xl font-semibold">
+    8 de abril<span aria-hidden class="hidden md:inline mx-1">⚽</span><br
+      aria-hidden
+      class="block md:hidden"
+    />
+    <span>
+      <script is:inline>
+        const END_DATE = 1712581200000;
+        const d = new Date(END_DATE);
+        const date = d.toLocaleTimeString("es-CO", {
+          hour: '2-digit',
+            minute: '2-digit',
+        });
+        const selfScript = document.currentScript;
+        selfScript.parentNode.innerHTML = `${date}`;
+      </script>
+    </span>
+  </h2>
+
+  <h3 class="uppercase text-2xl font-medium flex flex-col max-w-sm mt-6">
+    <span>Municipio de Funes Sur de Nariño</span>
+    <span>Estadio Municipal</span>
+  </h3>
+
+  <a
+    class={`
+ border-black border-2 font-medium uppercase text-lg
+ px-4 py-1 mt-8
+ hover:bg-white hover:scale-125
+ transition inline-block
+ `}
+    href="https://api.whatsapp.com/send?phone=573183773718&text=Hola%20quiero%20más%20información%20sobre%20el%20Zonal%20Baby%20Futbol%20Masculino%202024%20que%20se%20realizará%20en%20Funes%20Sur%20de%20Nariño"
+    target="_blank"
+  >
+    Información
+  </a>
+</section>

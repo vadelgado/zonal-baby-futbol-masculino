@@ -1,15 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+
+import Countdown from "@/sections/Countdown.astro"
+import Footer from "@/sections/Footer.astro"
+import Hero from "@/sections/Hero.astro"
+import Info from "@/sections/Info.astro"
+import PrincipalDate from "@/sections/PrincipalDate.astro"
 ---
 
 <Layout title="Zonal Baby Futbol Masculino 2024">
+	<Hero/>
 	<main>
-		<h1 class="text-white animate-blurred-fade-in">Zonal Baby Futbol Masculino 2024</h1>
-		<p>El Zonal Baby Futbol Masculino 2024 se llevará a cabo en 
-			el municipio de <strong>Funes</strong> sur de Nariño
-		</p>
-
+		<PrincipalDate/>
+		<Info/>
+		<Countdown/>
 	</main>
+	<Footer/>
 </Layout>
 
 
