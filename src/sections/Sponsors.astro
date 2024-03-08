@@ -9,7 +9,7 @@ import { SPONSORS } from "@/consts/sponsors"
 			SPONSORS.map(({ id, name, url }) => (
 				<a
 					class="company-link group relative flex h-24 items-center justify-center overflow-hidden md:h-32"
-					title={`Visita la página del patrocinador ${name}`}
+					title={`Visita la página de ${name}`}
 					href={url}
 					target="_blank"
 					rel="noopener noreferrer"
@@ -17,7 +17,7 @@ import { SPONSORS } from "@/consts/sponsors"
 					<img
 						loading="lazy"
 						src={`/${id}.webp`}
-						alt={`Logo del patrocinador ${name}`}
+						alt={`Logo de ${name}`}
 						class="company-logo w-40 h-auto px-4 transition group-hover:scale-110"
 					/>
 				</a>
