@@ -1,45 +1,126 @@
 ---
+
 ---
 
-<section class="flex font-medium text-black gap-y-10 mt-32
-flex-col">
-    <div class="flex justify-center items-center">
-        <a class="hover:scale-125
-        hover:opacity-70 transition inline-block"
-        href="https://www.facebook.com/oscararmando.futurasestrellas"
-        target="_blank" rel="nofollow noopener noreferrer">
-        <img src="./facebook.svg" alt="Logo de Facebook">
-    </a>
-    </div>
+<section class="flex font-medium text-pretty gap-y-10 my-32 flex-col">
+  <a
+    href="https://www.facebook.com/oscararmando.futurasestrellas"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    class="hover:scale-125 hover:opacity-70 transition mx-auto"
+    aria-label="Buscanos En Facebook"
+  >
+    <svg
+      class="text-prettydetect-in-viewport"
+      width="78"
+      height="91"
+      fill="none"
+      viewBox="0 0 78 91"
+      ><path
+        fill="currentColor"
+        d="M25 3C12.85 3 3 12.85 3 25c0 11.03 8.125 20.137 18.712 21.728V30.831h-5.443v-5.783h5.443V21.2c0-6.371 3.104-9.168 8.399-9.168 2.536 0 3.877.188 4.512.274v5.048h-3.612c-2.248 0-3.033 2.131-3.033 4.533v3.161h6.588l-.894 5.783h-5.694v15.944C38.716 45.318 47 36.137 47 25c0-12.15-9.85-22-22-22z"
+      ></path>
+    </svg>
+  </a>
 
-
-
-    <div class="flex flex-col md:flex-row gap-4 uppercase gap-x-10"
+  <div
+    class="grid uppercase text-center gap-x-10 [grid-template-columns:1fr] md:grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] lg:[grid-template-columns:1fr_1.5fr_1fr] "
+  >
+  <article
+  class="order-2 md:flex-1 md:order-none flex justify-center items-center text-3xl lg:text-4xl py-10 md:py-12 lg:py-20 px-10 md:px-0 lg:px-0 border-t-2 md:border-y-2 border-primary"
+>
+  <h3 class="md:max-w-[250px]">
+    <a
+      class="hover:text-pretty transition-transform hover:scale-110 inline-block"
+      href="https://www.funes-narino.gov.co/"
+      target="_blank"
+      rel="nofollow noopener noreferrer"
     >
-    <article class="order-2 flex justify-center items-center text-xl py-20 px-10 border-y-2 border-black">
-        <h5 class="w-56 text-center">
-            Clasificatorio al Zonal Nacional Sur Occidente de Colombia 2024.
-        </h5>
-    </article>
-    <article class="order-1 flex justify-center items-center text-xl py-20 px-10 md:border-y-2 
-    border-t-2 border-black">
-        <h4>
-            <a class="hover:text-white transition hover:scale-110
-            inline-block"
-            href="https://www.funes-narino.gov.co/"
-        target="_blank" rel="nofollow noopener noreferrer">
-        Alcaldía Municipal de Funes Unidos Haremos Historía oficina de deportes. </h4>
-        </a>
-    </article>
-    <article class="order-3 flex justify-center items-center text-xl py-20 px-10 border-y-2 border-black">
-        <h5>
-            <a class="hover:text-white transition hover:scale-110
-            inline-block"
-            href="https://festivaldefestivales.com/"
-        target="_blank" rel="nofollow noopener noreferrer">
-            Aval corporación social y deportiva los Paisitas de Medellín.</h5>
-        </a>
-    </article>
-</div>
+    <img
+    class="mx-auto"
+    src="./Zonal Baby Masculino.webp"
+    alt="Logo Zonal Baby Fútbol Masculino"
+  />      
+      Clasificatorio al Zonal Nacional Sur Occidente de Colombia 2024.
+    </a>
+  </h3>
+</article>
 
+    <article
+      class="order-1 md:flex-1 md:order-none flex justify-center items-center text-3xl lg:text-4xl py-10 md:py-12 lg:py-20 px-10 md:px-0 lg:px-0 border-t-2 md:border-y-2 border-primary"
+    >
+      <h3 class="md:max-w-[250px]">
+        <a
+          class="hover:text-pretty transition-transform hover:scale-110 inline-block"
+          href="https://www.funes-narino.gov.co/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <img class="mx-auto" src="./logoFunes.webp" alt="Logo de Alcaldía Funes" />
+          Alcaldía Municipal de Funes Unidos Haremos Historía oficina de deportes.
+        </a>
+      </h3>
+    </article>
+
+    <article
+      class="order-3 md:flex-1 md:order-none flex justify-center items-center text-3xl lg:text-4xl py-10 md:py-12 lg:py-20 px-10 md:px-0 lg:px-0 border-t-2 md:border-y-2 border-primary"
+    >
+      <h3 class="md:max-w-[250px]">
+        <a
+          class="hover:text-pretty transition-transform hover:scale-110 inline-block"
+          href="https://www.funes-narino.gov.co/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+        <img
+        class="mx-auto"
+        src="losPaisitas.webp"
+        alt="Logo Corporación Deportiva los Paisitas"
+      />
+          Aval corporación social y deportiva los Paisitas de Medellín.
+        </a>
+      </h3>
+    </article>
+  </div>
 </section>
+
+<style>
+  .twitch-link,
+  svg {
+    @apply text-pretty;
+  }
+
+  @supports (animation-timeline: view()) {
+    svg {
+      animation-timeline: view();
+      animation-name: show;
+      animation-timing-function: ease-in;
+    }
+
+    :not(a:hover) > .twitch-link {
+      animation-timeline: view(block);
+      animation-name: show;
+      animation-timing-function: ease-in;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    svg {
+      animation-name: none;
+    }
+  }
+
+  @keyframes show {
+    from {
+      @apply text-pretty;
+    }
+
+    50% {
+      @apply text-pretty;
+    }
+
+    100% {
+      @apply text-pretty;
+    }
+  }
+</style>
