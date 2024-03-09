@@ -1,22 +1,23 @@
 ---
 import '@fontsource-variable/jost';
+
 import Noise from '@/components/Noise.astro';
+
+import SEO from "@/components/SEO.astro"
+
 interface Props {
-	title: string;
+	description: string
+	title: string
+	preloadImgLCP?: string
 }
 
-const { title } = Astro.props;
+const { title, description, preloadImgLCP } = Astro.props
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Evento de Fútbol Clasificatorio al Zonal Nacional Sur Occidente de Colombia 2024 Categoría Masculino 2012 - 2013 Municio de Funes Sur de Nariño - 2024" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />		
-		
-		<title>{title}</title>
+		<SEO title={title} description={description} preloadImgLCP={preloadImgLCP} />
 	</head>
 	<body>
 		<Noise/>

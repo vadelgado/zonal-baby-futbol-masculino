@@ -1,0 +1,47 @@
+---
+import jost from "@fontsource-variable/jost/files/jost-latin-wght-normal.woff2"
+
+interface Props {
+    title: string
+    description: string
+    preloadImgLCP?: string
+}
+
+const { title, description, preloadImgLCP } = Astro.props
+---
+
+<title>{title}</title>
+<meta charset="UTF-8" />
+<meta name="description" content={description} />
+
+<link rel="preload" href={jost} as="font" type="font/woff2" crossorigin />
+{
+    preloadImgLCP && (
+        <link rel="preload" href={preloadImgLCP} as="image" type="image/webp" crossorigin />
+    )
+}
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="canonical" href="https://zonal-baby-futbol-masculino.vercel.app/" />
+<meta name="viewport" content="width=device-width" />
+<meta name="theme-color" content="#d5ff00" />
+
+<meta name="keywords" content="Torneo, Futuras Estrellas, Baby Masculino, Funes Nariño, Zonal Baby Fútbol Masculino, Corporación Deportiva Los Paisitas, Liga de Futbol Nariño" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@BabyFutbolMasculinoFunes" />
+<meta name="twitter:creator" content="@AlianzaSureña" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content="https://zonal-baby-futbol-masculino.vercel.app/Zonal%20Baby%20Masculino.webp" />
+
+<meta property="og:image" content="https://zonal-baby-futbol-masculino.vercel.app/Zonal%20Baby%20Masculino.webp" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content="https://zonal-baby-futbol-masculino.vercel.app/" />
+<meta property="og:site_name" content="Zonal Baby Fútbol Funes Nariño 2024" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_CO" />
+
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
