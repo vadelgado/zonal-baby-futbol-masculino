@@ -1,0 +1,28 @@
+---
+import LiteYouTube from "@/components/LiteYouTube.astro"
+import Typography from "@/components/Typography.astro"
+---
+
+<section class="overflow-hidden px-2 py-2 md:py-80">
+
+    <Typography as="h3" variant="h3" color="black" class:list={"text-center"}>
+		LUGAR
+	</Typography>
+
+    <Typography
+        as="p"
+        variant="body"
+        color="black" 
+        class:list={"mx-auto mt-4 max-w-[250px] text-wrap text-center"}
+    >
+    <a href="https://www.funes-narino.gov.co/noticias/inauguracion-del-centro-recreacional-y-deportivo-el">
+        Centro recreacional y deportivo el nogal II etapa del municipio de Funes.
+    </a>
+    </Typography>
+    
+    
+
+	<div class="relative mt-8">		
+		<LiteYouTube videoId="cMpz7x7mzfw" backgroundImage="/video-presentation-cover.webp" />
+	</div>
+</section>
