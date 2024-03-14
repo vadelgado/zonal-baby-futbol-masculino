@@ -17,7 +17,7 @@ const { title, description, preloadImgLCP } = Astro.props
 <link rel="preload" href={jost} as="font" type="font/woff2" crossorigin />
 {
     preloadImgLCP && (
-        <link rel="preload" href={preloadImgLCP} as="image" type="image/webp" crossorigin />
+        <link rel="preload" href={preloadImgLCP} as="image" type="image/svg+xml" crossorigin />
     )
 }
 
@@ -33,9 +33,9 @@ const { title, description, preloadImgLCP } = Astro.props
 <meta name="twitter:creator" content="@AlianzaSureña" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content="https://zonal-baby-futbol-masculino.vercel.app/Zonal%20Baby%20Masculino.webp" />
+<meta name="twitter:image" content="https://zonal-baby-futbol-masculino.vercel.app/Zonal%20Baby%20Masculino.svg" />
 
-<meta property="og:image" content="https://zonal-baby-futbol-masculino.vercel.app/Zonal%20Baby%20Masculino.webp" />
+<meta property="og:image" content="https://zonal-baby-futbol-masculino.vercel.app/Zonal%20Baby%20Masculino.svg" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content="https://zonal-baby-futbol-masculino.vercel.app/" />
