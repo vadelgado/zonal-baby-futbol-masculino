@@ -14,10 +14,10 @@ const { title, description, preloadImgLCP } = Astro.props
 <meta charset="UTF-8" />
 <meta name="description" content={description} />
 
-<link rel="preload" href={jost} as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={jost} as="font" type="font/woff2" crossorigin="anonymous" />
 {
     preloadImgLCP && (
-        <link rel="preload" href={preloadImgLCP} as="image" type="image/svg+xml" crossorigin />
+        <link rel="preload" href={preloadImgLCP} as="image" type="image/svg+xml" crossorigin="anonymous" />
     )
 }
 
