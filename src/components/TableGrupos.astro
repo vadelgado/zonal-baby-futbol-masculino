@@ -1,0 +1,153 @@
+---
+import { RES_TEAMS } from "@/consts/resTeams";
+---
+
+<section>
+
+
+  <h2 color="white" class:list={"text-center"}>Tablas de Grupos</h2>
+  <table class="mt-10 w-full text-center text-black lg:text-lg">
+    <tbody>
+        <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
+            <td class="py-3 font-bold">Grupo A</td>
+            <td class="py-3 font-bold">Grupo B</td>
+            <td class="py-3 font-bold">Grupo C</td>
+            <td class="py-3 font-bold">Grupo D</td>
+        </tr>
+        {[1, 2, 3, 4].map((num) => (
+            <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
+                {['A', 'B', 'C', 'D'].map((letter) => {
+                    const pos = ['A', 'B', 'C', 'D'].indexOf(letter) * 4 + num;
+                    const team = RES_TEAMS.find((team) => Number(team.resultadoSorteo) === pos);
+                    return <td class="text-primary text-sm"><span class="font-semibold text-xs">{num}{letter} </span>{team ? team.name : ''}</td>;
+                })}
+            </tr>
+        ))}
+    </tbody>
+  </table>
+
+
+  <br>    <br>
+  <h2 color="white" class:list={"text-center"}>Programación</h2>
+  <table class="mt-10 w-full text-center text-black lg:text-lg">
+    <tbody>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="py-3 font-semibold">FECHA</td>
+        <td class="py-3 font-semibold">HORA</td>
+        <td class="py-3 font-semibold">EQUIPO</td>
+        <td class="py-3 font-semibold">MARCADOR</td>
+        <td class="py-3 font-semibold">EQUIPO</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="py-3 font-semibold" rowspan="8"
+          >Martes <br />16 de Abril 2024 <br /> Estadio Municipal Funes</td
+        >
+        <td class="text-primary">08:00 A.M.</td>
+        <td class="text-primary">1A</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">4A</td>
+      </tr>
+
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">09:20 A.M.</td>
+        <td class="text-primary">2A</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">3A</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">10:40 A.M.</td>
+        <td class="text-primary">1B</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">4B</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">12:00 P.M.</td>
+        <td class="text-primary">2B</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">3B</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">01:20 P.M.</td>
+        <td class="text-primary">1C</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">4C</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">02:40 P.M.</td>
+        <td class="text-primary">2C</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">3C</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">04:00 P.M.</td>
+        <td class="text-primary">1D</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">4D</td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="text-primary">05:20 P.M.</td>
+        <td class="text-primary">2D</td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">3D</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

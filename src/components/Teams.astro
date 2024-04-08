@@ -1,0 +1,25 @@
+---
+import { TEAMS } from '@/consts/teams';
+---
+<section class="my-40">
+    <h2 class="uppercase text-2xl font-medium max-w-sm mt-6 text-center mx-auto">
+        <span>Equipos Participantes</span>
+    </h2>
+    <div class="mt-12 grid select-none grid-cols-2 gap-8 md:grid-cols-3">
+        {
+            TEAMS.map(({ id, name }) => (
+                <div class="company-link group relative flex flex-col h-34 items-center justify-center overflow-hidden md:h-44">
+                    <img
+                        loading="lazy"
+                        src={`Escudos/${id}.webp`}
+                        alt={`Logo de ${name}`}
+                        class={`company-logo h-32 w-auto px-4 transition group-hover:scale-105 mx-auto`}
+                    />
+                    <h2 class="text-center group-hover:scale-105">{name}</h2>
+                </div>
+            ))
+        }
+    </div>
+</section>
+
+
