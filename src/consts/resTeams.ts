@@ -2,82 +2,82 @@ export const RES_TEAMS = [
     {
         id: "1",
         name: "Alcaldía de Funes - Fundación Fénix",        
-        resultadoSorteo:16
+        resultadoSorteo:0
     },
     {
         id: "2",
         name: "Alcaldía de Pupiales",
-        resultadoSorteo:15
+        resultadoSorteo:0
     },
     {
         id: "3",
         name: "Américo Quiñones La Unión",
-        resultadoSorteo:14
+        resultadoSorteo:0
     },
     {
         id: "4",
         name: "Asociación Deportivo Pasto",
-        resultadoSorteo:13
+        resultadoSorteo:0
     },
     {
         id: "5",
         name: "Club Atlético Sucre Ipiales",
-        resultadoSorteo:12
+        resultadoSorteo:0
     },
     {
         id: "6",
         name: "Club CAR Nariño",
-        resultadoSorteo:11
+        resultadoSorteo:0
     },
     {
         id: "7",
         name: "Club Eder Ruales Ipiales",
-        resultadoSorteo:10
+        resultadoSorteo:0
     },
     {
         id: "8",
         name: "Club Estudiantes Pasto",
-        resultadoSorteo:9
+        resultadoSorteo:0
     },
     {
         id: "9",
         name: "Club Futuras Estrellas Nariño",
-        resultadoSorteo:8
+        resultadoSorteo:0
     },
     {
         id: "10",
         name: "Club Leones FC Pasto",
-        resultadoSorteo:7
+        resultadoSorteo:0
     },
     {
         id: "11",
         name: "Club MPB Ricaurte",
-        resultadoSorteo:6
+        resultadoSorteo:0
     },
     {
         id: "12",
         name: "Club Sporting de Nariño",
-        resultadoSorteo:5
+        resultadoSorteo:0
     },
     {
         id: "13",
         name: "Club Sueño Fútbol Cumbal",
-        resultadoSorteo:4
+        resultadoSorteo:0
     },
     {
         id: "14",
         name: "Club Talentos del Sur Ipiales",
-        resultadoSorteo:3
+        resultadoSorteo:0
     },
     {
         id: "15",
         name: "Escuela Deportivo Pasto 2013",
-        resultadoSorteo:2
+        resultadoSorteo:0
     },
     {
         id: "16",
         name: "Escuela William Andrade Mora Samaniego",
-        resultadoSorteo:1
+        resultadoSorteo:0
     },
     
 ] as const;
