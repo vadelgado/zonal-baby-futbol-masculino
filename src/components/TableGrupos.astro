@@ -1,40 +1,67 @@
 ---
 import { RES_TEAMS } from "@/consts/resTeams";
+let teams = Array(16).fill(null);
+RES_TEAMS.forEach(team => {
+  teams[team.resultadoSorteo - 1] = team;
+});
 ---
 
 <section>
-
-
-  <h2 color="white" class:list={"text-center"}>Tablas de Grupos</h2>
-  <table class="mt-10 w-full text-center text-black lg:text-lg">
-    <tbody>
-        <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
-            <td class="py-3 font-bold">Grupo A</td>
-            <td class="py-3 font-bold">Grupo B</td>
-            <td class="py-3 font-bold">Grupo C</td>
-            <td class="py-3 font-bold">Grupo D</td>
-        </tr>
-        {[1, 2, 3, 4].map((num) => (
-            <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
-                {['A', 'B', 'C', 'D'].map((letter) => {
-                    const pos = ['A', 'B', 'C', 'D'].indexOf(letter) * 4 + num;
-                    const team = RES_TEAMS.find((team) => Number(team.resultadoSorteo) === pos);
-                    return <td class="text-primary text-sm"><span class="font-semibold text-xs">{num}{letter} </span>{team ? team.name : ''}</td>;
-                })}
-            </tr>
-        ))}
-    </tbody>
-  </table>
-
-
-  <br>    <br>
-  <h2 color="white" class:list={"text-center"}>Programación</h2>
+  <h2 class=" py-3 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+    <span class=" animate-fade-in animate-delay-300
+  uppercase text-white bg-black px-6 mb-9 font-medium">
+      Tabla de Grupos
+  </span>
+  </h2>
   <table class="mt-10 w-full text-center text-black lg:text-lg">
     <tbody>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="py-3 font-semibold">FECHA</td>
+        <td class="py-3 font-bold">Grupo A</td>
+        <td class="py-3 font-bold">Grupo B</td>
+        <td class="py-3 font-bold">Grupo C</td>
+        <td class="py-3 font-bold">Grupo D</td>
+      </tr>
+      {
+        [1, 2, 3, 4].map((num) => (
+          <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
+            {["A", "B", "C", "D"].map((letter) => {
+              const pos = ["A", "B", "C", "D"].indexOf(letter) * 4 + num - 1;
+              const team = teams[pos];
+              return (
+                <td class="text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+                  <span class="font-semibold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+                    {num}{letter}{" "}
+                  </span>
+                  {team ? team.name : ""}
+                </td>
+              );
+            })}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+
+
+
+  <h2 class=" py-6 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+    <span class=" animate-fade-in animate-delay-300
+  uppercase text-white bg-black px-6 mb-9 font-medium">
+      PROGRAMACIÓN
+  </span>
+  </h2>
+
+  <h2 class="text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+    Miercoles 17 de Abril 2024 <span></span> Estadio Municipal Funes
+  </h2>
+  
+  <table class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+    <tbody>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
         <td class="py-3 font-semibold">HORA</td>
         <td class="py-3 font-semibold">EQUIPO</td>
         <td class="py-3 font-semibold">MARCADOR</td>
@@ -43,110 +70,141 @@ import { RES_TEAMS } from "@/consts/resTeams";
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="py-3 font-semibold" rowspan="8"
-          >Martes <br />16 de Abril 2024 <br /> Estadio Municipal Funes</td
-        >
-        <td class="text-primary">08:00 A.M.</td>
-        <td class="text-primary">1A</td>
+        <td class="py-1 px-0 font-semibold">08:00 A.M.</td>
+        <td class="text-primary ">
+          <span class="text-primary ">
+            {teams[0] ? '1A '+teams[0].name : '1A'}
+          </span>
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">4A</td>
+        <td class="text-primary">
+          {teams[3] ? '4A '+teams[3].name : '4A'}
+        </td>
       </tr>
 
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">09:20 A.M.</td>
-        <td class="text-primary">2A</td>
+        <td class="py-1 px-0 font-semibold">09:20 A.M.</td>
+        <td class="text-primary">
+          {teams[1] ? '2A '+teams[1].name : '2A'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">3A</td>
+        <td class="text-primary">
+          {teams[2] ? '3A '+teams[2].name : '3A'}
+        </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">10:40 A.M.</td>
-        <td class="text-primary">1B</td>
+        <td class="py-1 px-0 font-semibold">10:40 A.M.</td>
+        <td class="text-primary">
+          {teams[4] ? '1B '+teams[4].name : '1B'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">4B</td>
+        <td class="text-primary">
+          {teams[7] ? '4B '+teams[7].name : '4B'}
+        </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">12:00 P.M.</td>
-        <td class="text-primary">2B</td>
+        <td class="py-1 px-0 font-semibold">12:00 P.M.</td>
+        <td class="text-primary">
+          {teams[5] ? '2B '+teams[5].name : '2B'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">3B</td>
+        <td class="text-primary">
+          {teams[6] ? '3B '+teams[6].name : '3B'}
+        </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">01:20 P.M.</td>
-        <td class="text-primary">1C</td>
+        <td class="py-1 px-0 font-semibold">01:20 P.M.</td>
+        <td class="text-primary">
+          {teams[8] ? '1C '+teams[8].name : '1C'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">4C</td>
+        <td class="text-primary">
+          {teams[11] ? '4C '+teams[11].name : '4C'}
+        </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">02:40 P.M.</td>
-        <td class="text-primary">2C</td>
+        <td class="py-1 px-0 font-semibold">02:40 P.M.</td>
+        <td class="text-primary">
+          {teams[9] ? '2C '+teams[9].name : '2C'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">3C</td>
+        <td class="text-primary">
+          {teams[10] ? '3C '+teams[10].name : '3C'}
+        </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">04:00 P.M.</td>
-        <td class="text-primary">1D</td>
+        <td class="py-1 px-0 font-semibold">04:00 P.M.</td>
+        <td class="text-primary">
+          {teams[12] ? '1D '+teams[12].name : '1D'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">4D</td>
+        <td class="text-primary">
+          {teams[15] ? '4D '+teams[15].name : '4D'}
+        </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="text-primary">05:20 P.M.</td>
-        <td class="text-primary">2D</td>
+        <td class="py-1 px-0 font-semibold">05:20 P.M.</td>
+        <td class="text-primary">
+          {teams[13] ? '2D '+teams[13].name : '2D'}
+        </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
             <div class="text-center">-</div>
             <div class="text-center">-</div>
           </div>
         </td>
-        <td class="text-primary">3D</td>
+        <td class="text-primary">
+          {teams[14] ? '3D '+teams[14].name : '3D'}
+        </td>
       </tr>
     </tbody>
   </table>

@@ -1,0 +1,90 @@
+---
+import { RES_TEAMS } from "@/consts/resTeams";
+let { groupTeams, groupName } = Astro.props;
+let teams = Array(16).fill(null);
+RES_TEAMS.forEach((team) => {
+  teams[team.resultadoSorteo - 1] = team;
+});
+teams = teams.sort((a, b) => {
+  const aPts = a.PG * 3 + a.PE;
+  const bPts = b.PG * 3 + b.PE;
+  const aJL = a.TA * -5 + a.TR * -10;
+  const bJL = b.TA * -5 + b.TR * -10;
+  const aDG = a.GF - a.GC;
+  const bDG = b.GF - b.GC;
+  if (aPts !== bPts) {
+    return bPts - aPts;
+  } else if (aJL !== bJL) {
+    return bJL - aJL;
+  } else if (aDG !== bDG) {
+    return bDG - aDG;
+  } else {
+    return b.GF - a.GF;
+  }
+});
+---
+
+<div>
+  <h2
+    class="py-6 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
+    <span
+      class="animate-fade-in animate-delay-300 uppercase text-white bg-black px-6 mb-9 font-medium"
+    >
+    {groupName}
+    </span>
+  </h2>
+  <h2
+    class="text-center text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
+    PJ: Partidos jugados PG: Partidos ganados PE: Partidos empatados PP:
+    Partidos perdidos GF: Goles a favor GC: Goles en contra DG: Diferencia de
+    goles TA: Tarjetas Amarillas TR: Tarjetas Rojas Jl : Juego Limpio PT: Puntos
+  </h2>
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto">
+      <thead>
+        <tr
+          class="text-md font-semibold tracking-wide text-left text-white bg-black uppercase border-b border-gray-600"
+        >
+          <th class="px-4 py-3">Equipo</th>
+          <th class="px-4 py-3">PJ</th>
+          <th class="px-4 py-3">PG</th>
+          <th class="px-4 py-3">PE</th>
+          <th class="px-4 py-3">PP</th>
+          <th class="px-4 py-3">GF</th>
+          <th class="px-4 py-3">GC</th>
+          <th class="px-4 py-3">DG</th>
+          <th class="px-4 py-3">TA</th>
+          <th class="px-4 py-3">TR</th>
+          <th class="px-4 py-3">JL</th>
+          <th class="px-4 py-3">Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          groupTeams.map((team: any, index: number) => (
+            <tr class="text-white bg-black border-b border-gray-600">
+              <td class="px-4 py-3">
+                {team ? `${index + 1} ${team.name}` : `${index + 1}`}
+              </td>
+              <td class="px-4 py-3">{team ? team.PJ : "-"}</td>
+              <td class="px-4 py-3">{team ? team.PG : "-"}</td>
+              <td class="px-4 py-3">{team ? team.PE : "-"}</td>
+              <td class="px-4 py-3">{team ? team.PP : "-"}</td>
+              <td class="px-4 py-3">{team ? team.GF : "-"}</td>
+              <td class="px-4 py-3">{team ? team.GC : "-"}</td>
+              <td class="px-4 py-3">{team ? team.GF - team.GC : "-"}</td>
+              <td class="px-4 py-3">{team ? team.TA : "-"}</td>
+              <td class="px-4 py-3">{team ? team.TR : "-"}</td>
+              <td class="px-4 py-3">
+                {team ? team.TA * -5 + team.TR * -10 : "-"}
+              </td>
+              <td class="px-4 py-3">{team ? team.PG * 3 + team.PE : "-"}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
