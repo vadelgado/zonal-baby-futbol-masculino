@@ -1,7 +1,7 @@
 export const RES_TEAMS = [
   {
     id: "1",
-    name: "01",  
+    name: "Alcaldía Funes - Fénix.",  
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -13,7 +13,7 @@ export const RES_TEAMS = [
   },
   {
     id: "16",
-    name: "016",
+    name: "Alcaldía de Pupiales.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -25,7 +25,7 @@ export const RES_TEAMS = [
   },
   {
     id: "15",
-    name: "015",
+    name: "Américo Quiñones Unión.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -37,7 +37,7 @@ export const RES_TEAMS = [
   },
   {
     id: "14",
-    name: "014",
+    name: "Asoc. Dep. Pasto.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -49,7 +49,7 @@ export const RES_TEAMS = [
   },
   {
     id: "13",
-    name: "013",
+    name: "Atlético Sucre Ipiales.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -61,7 +61,7 @@ export const RES_TEAMS = [
   },
   {
     id: "12",
-    name: "012",
+    name: "CAR Nariño.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -73,7 +73,7 @@ export const RES_TEAMS = [
   },
   {
     id: "11",
-    name: "011",
+    name: "Eder Ruales Ipiales.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -85,7 +85,7 @@ export const RES_TEAMS = [
   },
   {
     id: "10",
-    name: "010",
+    name: "Estudiantes Pasto.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -97,7 +97,7 @@ export const RES_TEAMS = [
   },
   {
     id: "9",
-    name: "09",
+    name: "Fut. Estrellas Nariño.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -109,7 +109,7 @@ export const RES_TEAMS = [
   },
   {
     id: "8",
-    name: "08",
+    name: "Leones FC Pasto.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -121,7 +121,7 @@ export const RES_TEAMS = [
   },
   {
     id: "7",
-    name: "07",
+    name: "MPB Ricaurte.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -133,7 +133,7 @@ export const RES_TEAMS = [
   },
   {
     id: "6",
-    name: "06",
+    name: "Sporting de Nariño.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -145,7 +145,7 @@ export const RES_TEAMS = [
   },
   {
     id: "5",
-    name: "05",
+    name: "Sueño Fútbol Cumbal.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -157,7 +157,7 @@ export const RES_TEAMS = [
   },
   {
     id: "4",
-    name: "04",
+    name: "Talentos Sur Ipiales.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -169,7 +169,7 @@ export const RES_TEAMS = [
   },
   {
     id: "3",
-    name: "03",
+    name: "Esc. Dep. Pasto '13.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -181,7 +181,7 @@ export const RES_TEAMS = [
   },
   {
     id: "2",
-    name: "02",
+    name: "Esc. W. A. Mora Samaniego.",
     PJ: 0,
     PG: 0,
     PE: 0,

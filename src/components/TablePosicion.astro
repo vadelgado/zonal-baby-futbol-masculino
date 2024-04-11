@@ -1,28 +1,8 @@
 ---
-import { RES_TEAMS } from "@/consts/resTeams";
+
 import Grupos from "@/components/Grupos.astro";
-import Grupob from "@/components/Grupob.astro";
-let teams = Array(16).fill(null);
-RES_TEAMS.forEach((team) => {
-  teams[team.resultadoSorteo - 1] = team;
-});
-teams = teams.sort((a, b) => {
-  const aPts = a.PG * 3 + a.PE;
-  const bPts = b.PG * 3 + b.PE;
-  const aJL = a.TA * -5 + a.TR * -10;
-  const bJL = b.TA * -5 + b.TR * -10;
-  const aDG = a.GF - a.GC;
-  const bDG = b.GF - b.GC;
-  if (aPts !== bPts) {
-    return bPts - aPts;
-  } else if (aJL !== bJL) {
-    return bJL - aJL;
-  } else if (aDG !== bDG) {
-    return bDG - aDG;
-  } else {
-    return b.GF - a.GF;
-  }
-});
+
+
 ---
 
 <h2
@@ -35,6 +15,8 @@ teams = teams.sort((a, b) => {
     Tabla de Posiciones
   </span>
 </h2>
-<Grupos groupTeams={teams.slice(0, 4)} groupName="Grupo A" />
-<Grupob groupTeams={teams.slice(4, 8)} groupName="Grupo B" />
+
+
+<Grupos resultadosDeseados=['1C','2C','3C','4C'] groupName="Grupo D" />
+
 
