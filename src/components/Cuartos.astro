@@ -1,0 +1,288 @@
+---
+import { RES_CUARTOS } from "@/consts/cuartos";
+import Title from "./Title.astro";
+let teams = Array(16).fill(null);
+RES_CUARTOS.forEach((team) => {
+  teams[Number(team.id) - 1] = team;
+});
+---
+
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  Cuartos de Final:
+  <span class="font-bold"> sábado 20 de abril</span>
+  de 2024 Estadio Municipal Funes.
+  <span class="mt-2">👀 Clasifican los 8 Primeros equipos</span>
+  <div>INICIACIÓN DEL PARTIDO HORA EXACTA</div>
+</section>
+
+<table
+  class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <tbody>
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-3 font-semibold">HORA</td>
+      <td class="py-3 font-semibold">EQUIPO</td>
+      <td class="py-3 font-semibold">MARCADOR</td>
+      <td class="py-3 font-semibold">EQUIPO</td>
+    </tr>
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">08:00 A.M.</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"pos.1" + " " + teams[0]?.name ?? "pos.1"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"pos.8" + " " + teams[7]?.name ?? "pos.8"}
+      </td>
+    </tr>
+
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">09:20 A.M.</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"pos.2" + " " + teams[1]?.name ?? "pos.2"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"pos.7" + " " + teams[6]?.name ?? "pos.7"}
+      </td>
+    </tr>
+
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">10:40 A.M.</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"pos.3" + " " + teams[2]?.name ?? "pos.3"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"pos.6" + " " + teams[5]?.name ?? "pos.6"}
+      </td>
+    </tr>
+
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">12:00 P.M.</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"pos.4" + " " + teams[3]?.name ?? "pos.4"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"pos.5" + " " + teams[4]?.name ?? "pos.5"}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<Title title="Semifinal" />
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  Cuartos de Final:
+  <span class="font-bold"> sábado 20 de abril </span>
+  de 2024 Estadio Municipal Funes.
+</section>
+
+<table
+  class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <tbody>
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-3 font-semibold">HORA</td>
+      <td class="py-3 font-semibold">EQUIPO</td>
+      <td class="py-3 font-semibold">MARCADOR</td>
+      <td class="py-3 font-semibold">EQUIPO</td>
+    </tr>
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">02:00 P.M. A</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"Ganador P1" + " " + teams[0]?.name ?? "Ganador P1"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"Ganador P3" + " " + teams[7]?.name ?? "Ganador P3"}
+      </td>
+    </tr>
+
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">04:00 P.M. B</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"Ganador P2" + " " + teams[1]?.name ?? "Ganador P2"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"Ganador P4" + " " + teams[6]?.name ?? "Ganador P4"}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <span class="font-bold"> NOTA:</span>
+  EN CASO DE EMPATE SE GUENGA 2 TIEMPOS EXTRAS Y DE PERSITIR EL EMPATE TIROS DESDE
+  EL PUNTO PENALTI.
+</section>
+
+<Title title="Final" />
+
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <span class="font-bold"> Domingo 21 </span>
+  de abril de 2024
+</section>
+
+<table
+  class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <tbody>
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-3 font-semibold">HORA</td>
+      <td class="py-3 font-semibold">EQUIPO</td>
+      <td class="py-3 font-semibold">MARCADOR</td>
+      <td class="py-3 font-semibold">EQUIPO</td>
+    </tr>
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">02:00 P.M. A</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"Ganador P1" + " " + teams[0]?.name ?? "Perdedor A"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"Ganador P3" + " " + teams[7]?.name ?? "Perdedor B"}
+      </td>
+    </tr>
+
+    <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">04:00 P.M. B</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {"Ganador P2" + " " + teams[1]?.name ?? "Ganador A"}
+        </span>
+      </td>
+      <td class="t</span>ext-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {"Ganador P4" + " " + teams[6]?.name ?? "Ganador B"}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:tex</td>t-lg xl:text-xl 2xl:text-xl"
+>
+  <span class="font-bold"> NOTA:</span>
+  EN CASO DE EMPATE SE GUENGA 2 TIEMPOS EXTRAS Y DE PERSITIR EL EMPATE TIROS DESDE
+  EL PUNTO PENALTI.
+</section>
+
+<Title title="Premiación" />
+
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <span class="font-bold"> Domingo 21 </span>
+  de abril de 2024 ⏰ 11:00 A.M.
+</section>
+
+<section
+  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+>
+  <table class="mt-5">
+    <tr>
+      <td class="font-bold">🥇Campeón:</td>
+    </tr>
+    <tr>
+      <td class="font-bold">🥈Subcampeón:</td>
+    </tr>
+    <tr>
+      <td class="font-bold">🥉Tercer Puesto:</td>
+    </tr>
+    <tr>
+      <td class="font-bold">🏅Cuarto Puesto:</td>
+    </tr>
+    <tr>
+      <td class="font-bold">⚽Goleador:</td>
+    </tr>
+    <tr>
+      <td class="font-bold">🥅Valla Menos Vencida:</td>
+    </tr>
+  </table>
+</section>

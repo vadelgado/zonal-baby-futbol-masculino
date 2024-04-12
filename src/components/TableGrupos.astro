@@ -1,17 +1,23 @@
 ---
 import { RES_TEAMS } from "@/consts/resTeams";
+import Title from "@/components/Title.astro";
+import Cuartos from "@/components/Cuartos.astro";
 let teams = Array(16).fill(null);
-RES_TEAMS.forEach(team => {
+RES_TEAMS.forEach((team) => {
   teams[Number(team.id) - 1] = team;
 });
 ---
 
 <section>
-  <h2 class=" py-3 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
-    <span class=" animate-fade-in animate-delay-300
-  uppercase text-white bg-black px-6 mb-9 font-medium">
+  <h2
+    class="py-3 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
+    <span
+      class="animate-fade-in animate-delay-300
+  uppercase text-white bg-black px-6 mb-9 font-medium"
+    >
       Tabla de Grupos
-  </span>
+    </span>
   </h2>
   <table class="mt-10 w-full text-center text-black lg:text-lg">
     <tbody>
@@ -23,90 +29,120 @@ RES_TEAMS.forEach(team => {
         <td class="py-3 font-bold">Grupo C</td>
         <td class="py-3 font-bold">Grupo D</td>
       </tr>
-      {[0, 1, 2, 3].map(row => (
-        <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
-          {[0, 4, 8, 12].map(start => (
-            <td class="py-1 px-0 font-semibold">
-              <span class="text-primary">{start + row + 1}</span> {teams[start + row] ? teams[start + row].name : ''}
-            </td>
-          ))}
-        </tr>
-      ))}
-
+      {
+        [0, 1, 2, 3].map((row) => (
+          <tr class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4">
+            {[0, 4, 8, 12].map((start) => (
+              <td class="py-1 px-0 font-semibold">
+                <span class="text-primary">{start + row + 1}</span>{" "}
+                {teams[start + row] ? teams[start + row].name : ""}
+              </td>
+            ))}
+          </tr>
+        ))
+      }
     </tbody>
   </table>
 
-
-
-  <h2 class=" py-6 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
-    <span class=" animate-fade-in animate-delay-300
-  uppercase text-white bg-black px-6 mb-9 font-medium">
-  PROGRAMACIÓN GENERAL BABY FUNES
-  </span>
+  <h2
+    class="py-6 font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
+    "📢 Aviso: La organización se reserva el derecho de reprogramar cualquier
+    partido ⚽. Cambios en el calendario serán comunicados oportunamente.
+    Gracias por su comprensión y colaboración. 🏟️"
   </h2>
-  
-  <h2 class="text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+
+  <h2
+    class="py-3 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
+    <span
+      class="items-center animate-fade-in animate-delay-300
+  uppercase text-white bg-black px-6 mb-9 font-medium"
+    >
+      PROGRAMACIÓN GENERAL BABY FUNES
+    </span>
+  </h2>
+
+  <h2
+    class="text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     Martes 16 de Abril 2024 <span></span> Estadio Municipal Funes
   </h2>
   <h3>
-    <div class="mt-6  text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
-      <div class="  mt-2">
-        <p class="text-lg"> <span class="font-bold">11:30 A.M.</span>  Llegada Delegaciones Municipio de Funes.</p>
-      </div>
-      <div class="  mt-2">
-        <p class="text-lg"><span class="font-bold">12:45 P.M.</span> Reunión Delegados y cuerpo Técnico. Sorteo y Entrega de Uniformes.</p>
+    <div
+      class="mt-6 text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+    >
+      <div class="mt-2">
+        <p class="text-lg">
+          <span class="font-bold">11:30 A.M.</span> Llegada Delegaciones Municipio
+          de Funes.
+        </p>
       </div>
       <div class="mt-2">
-        <p class="text-lg"><span class="font-bold">1:45 P.M.</span>Concentración de Jugadores y Cuerpo Técnico, para desfile Inaugural.</p>
+        <p class="text-lg">
+          <span class="font-bold">12:45 P.M.</span> Reunión Delegados y cuerpo Técnico.
+          Sorteo y Entrega de Uniformes.
+        </p>
       </div>
-      <div class=" mt-2">
-        <p class="text-lg"><span class="font-bold">3:30 P.M.</span>Partido Inaugural.</p>
+      <div class="mt-2">
+        <p class="text-lg">
+          <span class="font-bold">1:45 P.M.</span>Concentración de Jugadores y
+          Cuerpo Técnico, para desfile Inaugural.
+        </p>
+      </div>
+      <div class="mt-2">
+        <p class="text-lg">
+          <span class="font-bold">3:30 P.M.</span>Partido Inaugural.
+        </p>
       </div>
     </div>
   </h3>
 
-  <table class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+  <table
+    class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     <tbody>
       <tr
-      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
-    >
-      <td class="py-3 font-semibold">HORA</td>
-      <td class="py-3 font-semibold">EQUIPO</td>
-      <td class="py-3 font-semibold">MARCADOR</td>
-      <td class="py-3 font-semibold">EQUIPO</td>
-      <td class="py-3 font-semibold"></td>
-    </tr>
-    <tr
-    class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
-  >
-    <td class="py-1 px-0 font-semibold">03:30 P.M.</td>
-    <td class="text-primary ">
-      <span class="text-primary ">
-        {teams[2] ? teams[2].id+' '+teams[2].name : '3'}
-      </span>
-    </td>
-    <td class="text-primary">
-      <div class="grid grid-cols-2 gap-2">
-        <div class="text-center">-</div>
-        <div class="text-center">-</div>
-      </div>
-    </td>
-    <td class="text-primary">
-      {teams[0] ? teams[0].id+' '+teams[0].name : '1'}
-    </td>
-    <td class="text-primary">
-      A
-    </td>
-  </tr>
-
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="py-3 font-semibold">HORA</td>
+        <td class="py-3 font-semibold">EQUIPO</td>
+        <td class="py-3 font-semibold">MARCADOR</td>
+        <td class="py-3 font-semibold">EQUIPO</td>
+        <td class="py-3 font-semibold"></td>
+      </tr>
+      <tr
+        class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+      >
+        <td class="py-1 px-0 font-semibold">03:30 P.M.</td>
+        <td class="text-primary">
+          <span class="text-primary">
+            {teams[2] ? teams[2].id + " " + teams[2].name : "3"}
+          </span>
+        </td>
+        <td class="text-primary">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="text-center">-</div>
+            <div class="text-center">-</div>
+          </div>
+        </td>
+        <td class="text-primary">
+          {teams[0] ? teams[0].id + " " + teams[0].name : "1"}
+        </td>
+        <td class="text-primary"> A </td>
+      </tr>
     </tbody>
   </table>
 
-  <h2 class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+  <h2
+    class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     Miercoles 17 de Abril 2024 <span></span> Estadio Municipal Funes
   </h2>
-  
-  <table class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+
+  <table
+    class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     <tbody>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
@@ -121,9 +157,9 @@ RES_TEAMS.forEach(team => {
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">08:00 A.M.</td>
-        <td class="text-primary ">
-          <span class="text-primary ">
-            {teams[12] ? teams[12].id+' '+teams[12].name : '13'}
+        <td class="text-primary">
+          <span class="text-primary">
+            {teams[12] ? teams[12].id + " " + teams[12].name : "13"}
           </span>
         </td>
         <td class="text-primary">
@@ -133,11 +169,9 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[13] ? teams[13].id+' '+teams[13].name : '14'}
+          {teams[13] ? teams[13].id + " " + teams[13].name : "14"}
         </td>
-        <td class="text-primary">
-          D
-        </td>
+        <td class="text-primary"> D </td>
       </tr>
 
       <tr
@@ -145,7 +179,7 @@ RES_TEAMS.forEach(team => {
       >
         <td class="py-1 px-0 font-semibold">09:20 A.M.</td>
         <td class="text-primary">
-          {teams[14] ? teams[14].id+' '+teams[14].name : '15'}
+          {teams[14] ? teams[14].id + " " + teams[14].name : "15"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -154,18 +188,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[15] ? teams[15].id+' '+teams[15].name : '16'}
+          {teams[15] ? teams[15].id + " " + teams[15].name : "16"}
         </td>
-        <td class="text-primary">
-          D
-        </td>
+        <td class="text-primary"> D </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">10:40 A.M.</td>
         <td class="text-primary">
-          {teams[4] ? teams[4].id+' '+teams[4].name : '5'}
+          {teams[4] ? teams[4].id + " " + teams[4].name : "5"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -174,18 +206,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[5] ? teams[5].id+' '+teams[5].name : '6'}
+          {teams[5] ? teams[5].id + " " + teams[5].name : "6"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">12:00 P.M.</td>
         <td class="text-primary">
-          {teams[6] ? teams[6].id+' '+teams[6].name : '7'}
+          {teams[6] ? teams[6].id + " " + teams[6].name : "7"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -194,18 +224,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[7] ? teams[7].id+' '+teams[7].name : '8'}
+          {teams[7] ? teams[7].id + " " + teams[7].name : "8"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">01:20 P.M.</td>
         <td class="text-primary">
-          {teams[8] ? teams[8].id+' '+teams[8].name : '9'}
+          {teams[8] ? teams[8].id + " " + teams[8].name : "9"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -214,18 +242,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[9] ? teams[9].id+' '+teams[9].name : '10'}
+          {teams[9] ? teams[9].id + " " + teams[9].name : "10"}
         </td>
-        <td class="text-primary">
-          C
-        </td>
+        <td class="text-primary"> C </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">02:40 P.M.</td>
         <td class="text-primary">
-          {teams[10] ? teams[10].id+' '+teams[10].name : '11'}
+          {teams[10] ? teams[10].id + " " + teams[10].name : "11"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -234,18 +260,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[11] ? teams[11].id+' '+teams[11].name : '12'}
+          {teams[11] ? teams[11].id + " " + teams[11].name : "12"}
         </td>
-        <td class="text-primary">
-          C
-        </td>
+        <td class="text-primary"> C </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">04:00 P.M.</td>
         <td class="text-primary">
-          {teams[2] ? teams[2].id+' '+teams[2].name : '3'}
+          {teams[2] ? teams[2].id + " " + teams[2].name : "3"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -254,18 +278,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[3] ? teams[3].id+' '+teams[3].name : '4'}
+          {teams[3] ? teams[3].id + " " + teams[3].name : "4"}
         </td>
-        <td class="text-primary">
-          A
-        </td>
+        <td class="text-primary"> A </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">05:20 P.M.</td>
         <td class="text-primary">
-          {teams[0] ? teams[0].id+' '+teams[0].name : '1'}
+          {teams[0] ? teams[0].id + " " + teams[0].name : "1"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -274,20 +296,22 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          {teams[1] ? teams[1].id+' '+teams[1].name : '2'}
+          {teams[1] ? teams[1].id + " " + teams[1].name : "2"}
         </td>
-        <td class="text-primary">
-          A
-        </td>
+        <td class="text-primary"> A </td>
       </tr>
     </tbody>
   </table>
 
-  <h2 class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+  <h2
+    class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     Jueves 18 de Abril 2024 <span></span> Estadio Municipal Funes
   </h2>
-  
-  <table class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+
+  <table
+    class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     <tbody>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
@@ -302,9 +326,9 @@ RES_TEAMS.forEach(team => {
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">08:00 A.M.</td>
-        <td class="text-primary ">
-          <span class="text-primary ">
-            { teams[7]?.id + ' ' + teams[7]?.name ?? '8'}
+        <td class="text-primary">
+          <span class="text-primary">
+            {teams[7]?.id + " " + teams[7]?.name ?? "8"}
           </span>
         </td>
         <td class="text-primary">
@@ -314,11 +338,9 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[4]?.id + ' ' + teams[4]?.name ?? '5'}
+          {teams[4]?.id + " " + teams[4]?.name ?? "5"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
 
       <tr
@@ -326,7 +348,7 @@ RES_TEAMS.forEach(team => {
       >
         <td class="py-1 px-0 font-semibold">09:20 A.M.</td>
         <td class="text-primary">
-          { teams[5]?.id + ' ' + teams[5]?.name ?? '6'}
+          {teams[5]?.id + " " + teams[5]?.name ?? "6"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -335,18 +357,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[6]?.id + ' ' + teams[6]?.name ?? '8'}
+          {teams[6]?.id + " " + teams[6]?.name ?? "8"}
         </td>
-        <td class="text-primary">
-          D
-        </td>
+        <td class="text-primary"> D </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">10:40 A.M.</td>
         <td class="text-primary">
-          { teams[11]?.id + ' ' + teams[11]?.name ?? '12'}
+          {teams[11]?.id + " " + teams[11]?.name ?? "12"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -355,18 +375,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[8]?.id + ' ' + teams[8]?.name ?? '9'}
+          {teams[8]?.id + " " + teams[8]?.name ?? "9"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">12:00 P.M.</td>
         <td class="text-primary">
-          { teams[9]?.id + ' ' + teams[9]?.name ?? '10'}
+          {teams[9]?.id + " " + teams[9]?.name ?? "10"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -375,18 +393,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[10]?.id + ' ' + teams[10]?.name ?? '11'}
+          {teams[10]?.id + " " + teams[10]?.name ?? "11"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">01:20 P.M.</td>
         <td class="text-primary">
-          { teams[15]?.id + ' ' + teams[15]?.name ?? '16'}
+          {teams[15]?.id + " " + teams[15]?.name ?? "16"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -395,18 +411,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[12]?.id + ' ' + teams[12]?.name ?? '13'}
+          {teams[12]?.id + " " + teams[12]?.name ?? "13"}
         </td>
-        <td class="text-primary">
-          C
-        </td>
+        <td class="text-primary"> C </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">02:40 P.M.</td>
         <td class="text-primary">
-          { teams[13]?.id + ' ' + teams[13]?.name ?? '14'}
+          {teams[13]?.id + " " + teams[13]?.name ?? "14"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -415,18 +429,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[14]?.id + ' ' + teams[14]?.name ?? '15'}
+          {teams[14]?.id + " " + teams[14]?.name ?? "15"}
         </td>
-        <td class="text-primary">
-          C
-        </td>
+        <td class="text-primary"> C </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">04:00 P.M.</td>
         <td class="text-primary">
-          { teams[1]?.id + ' ' + teams[1]?.name ?? '2'}
+          {teams[1]?.id + " " + teams[1]?.name ?? "2"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -435,18 +447,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[2]?.id + ' ' + teams[2]?.name ?? '3'}
+          {teams[2]?.id + " " + teams[2]?.name ?? "3"}
         </td>
-        <td class="text-primary">
-          A
-        </td>
+        <td class="text-primary"> A </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">05:20 P.M.</td>
         <td class="text-primary">
-          { teams[3]?.id + ' ' + teams[3]?.name ?? '4'}
+          {teams[3]?.id + " " + teams[3]?.name ?? "4"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -455,20 +465,22 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[0]?.id + ' ' + teams[0]?.name ?? '1'}
+          {teams[0]?.id + " " + teams[0]?.name ?? "1"}
         </td>
-        <td class="text-primary">
-          A
-        </td>
+        <td class="text-primary"> A </td>
       </tr>
     </tbody>
   </table>
 
-  <h2 class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+  <h2
+    class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     Viernes 19 de Abril 2024 <span></span> Estadio Municipal Funes
   </h2>
-  
-  <table class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl">
+
+  <table
+    class="mt-10 w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
     <tbody>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
@@ -483,9 +495,9 @@ RES_TEAMS.forEach(team => {
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">08:00 A.M.</td>
-        <td class="text-primary ">
-          <span class="text-primary ">
-            { teams[11]?.id + ' ' + teams[11]?.name ?? '12'}
+        <td class="text-primary">
+          <span class="text-primary">
+            {teams[11]?.id + " " + teams[11]?.name ?? "12"}
           </span>
         </td>
         <td class="text-primary">
@@ -495,11 +507,9 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[9]?.id + ' ' + teams[9]?.name ?? '10'}
+          {teams[9]?.id + " " + teams[9]?.name ?? "10"}
         </td>
-        <td class="text-primary">
-          C
-        </td>
+        <td class="text-primary"> C </td>
       </tr>
 
       <tr
@@ -507,7 +517,7 @@ RES_TEAMS.forEach(team => {
       >
         <td class="py-1 px-0 font-semibold">09:20 A.M.</td>
         <td class="text-primary">
-          { teams[10]?.id + ' ' + teams[10]?.name ?? '11'}
+          {teams[10]?.id + " " + teams[10]?.name ?? "11"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -516,18 +526,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[8]?.id + ' ' + teams[8]?.name ?? '9'}
+          {teams[8]?.id + " " + teams[8]?.name ?? "9"}
         </td>
-        <td class="text-primary">
-          C
-        </td>
+        <td class="text-primary"> C </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">10:40 A.M.</td>
         <td class="text-primary">
-          { teams[15]?.id + ' ' + teams[15]?.name ?? '16'}
+          {teams[15]?.id + " " + teams[15]?.name ?? "16"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -536,18 +544,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[13]?.id + ' ' + teams[13]?.name ?? '14'}
+          {teams[13]?.id + " " + teams[13]?.name ?? "14"}
         </td>
-        <td class="text-primary">
-          D
-        </td>
+        <td class="text-primary"> D </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">12:00 P.M.</td>
         <td class="text-primary">
-          { teams[14]?.id + ' ' + teams[14]?.name ?? '15'}
+          {teams[14]?.id + " " + teams[14]?.name ?? "15"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -556,18 +562,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[12]?.id + ' ' + teams[12]?.name ?? '13'}
+          {teams[12]?.id + " " + teams[12]?.name ?? "13"}
         </td>
-        <td class="text-primary">
-          D
-        </td>
+        <td class="text-primary"> D </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">01:20 P.M.</td>
         <td class="text-primary">
-          { teams[7]?.id + ' ' + teams[7]?.name ?? '8'}
+          {teams[7]?.id + " " + teams[7]?.name ?? "8"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -576,18 +580,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[5]?.id + ' ' + teams[5]?.name ?? '6'}
+          {teams[5]?.id + " " + teams[5]?.name ?? "6"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">02:40 P.M.</td>
         <td class="text-primary">
-          { teams[6]?.id + ' ' + teams[6]?.name ?? '7'}
+          {teams[6]?.id + " " + teams[6]?.name ?? "7"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -596,18 +598,16 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[4]?.id + ' ' + teams[4]?.name ?? '5'}
+          {teams[4]?.id + " " + teams[4]?.name ?? "5"}
         </td>
-        <td class="text-primary">
-          B
-        </td>
+        <td class="text-primary"> B </td>
       </tr>
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
         <td class="py-1 px-0 font-semibold">04:00 P.M.</td>
         <td class="text-primary">
-          { teams[3]?.id + ' ' + teams[3]?.name ?? '4'}
+          {teams[3]?.id + " " + teams[3]?.name ?? "4"}
         </td>
         <td class="text-primary">
           <div class="grid grid-cols-2 gap-2">
@@ -616,16 +616,34 @@ RES_TEAMS.forEach(team => {
           </div>
         </td>
         <td class="text-primary">
-          { teams[1]?.id + ' ' + teams[1]?.name ?? '2'}
+          {teams[1]?.id + " " + teams[1]?.name ?? "2"}
         </td>
-        <td class="text-primary">
-          A
-        </td>
+        <td class="text-primary"> A </td>
       </tr>
     </tbody>
   </table>
+  <section
+    class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  >
+    <div class="mt-10 text-center text-primary font-bold">
+      ***Clasifican a la fase de cuartos de final los 8 equipos que logren mejor
+      puntuación ***
+    </div>
+    <div class="mt-2 text-center text-primary text-sm">
+      (OJO: ITEM CLAVE TABLA DE JUEGO LIMPIO)
+    </div>
+  </section>
 
-  
+  <Title title="SEGUNDA RONDA" />
+  <Cuartos />
+</section>
 
-
+<section class="text-right">
+  <div class="text-primary font-bold">Oscar Armando Bolaños Castro</div>
+  <div class="text-primary">
+    Coordinador BABY FÚTBOL Sur Occidente de Colombia
+  </div> 
+    <a href="https://wa.me/573183773718">      
+      ☎️Móvil 3183773718
+    </a>
 </section>
