@@ -23,9 +23,9 @@ export const SPONSORS = [
 		h:`24`,
 	},
 	{
-		id: "bancolombia",
-		name: "Bancolombia Funes",
-		url: "https://www.google.com/maps/uv?pb=!1s0x8e2915f0d0d15305%3A0x7825bbb3801e749f!3m1!7e115!4s%2Fmaps%2Fplace%2Fbancolombia%2B%2522funes%2522%2F%400.9977731%2C-77.4463112%2C3a%2C75y%2C175.72h%2C90t%2Fdata%3D*213m4*211e1*213m2*211slGkUx-TWrDxtM8wfqBD8YA*212e0*214m2*213m1*211s0x8e2915f0d0d15305%3A0x7825bbb3801e749f%3Fsa%3DX%26ved%3D2ahUKEwih2sewxOyEAxWyg4QIHYjMAxAQpx96BAhQEAA!5sbancolombia%20%22funes%22%20-%20Buscar%20con%20Google!15sCgIgAQ&imagekey=!1e2!2slGkUx-TWrDxtM8wfqBD8YA&hl=es-419",
+		id: "cauca",
+		name: "Electro Créditos del Cauca",
+		url: "https://electrocreditosdelcauca.com/",
 		w:`auto`,
 		h:`auto`,
 	},
@@ -37,11 +37,11 @@ export const SPONSORS = [
 		h:`24`,
 	},
 	{
-		id: "LaMerced",
-		name: "La Merced Restaurantes",
-		url: "https://lamerced.com.co/?fbclid=IwAR3XMc0xvt1NdFm-V5cIaJRDIjypg-DCiAvnelTwuhV8GFA_haDgHVzhMPM",
+		id: "fortaleza",
+		name: "Fortaleza Inmobiliaria",
+		url: "https://www.facebook.com/oscararmando.futurasestrellas",
 		w:`auto`,
-		h:`24`,
+		h:`23`,
 	},
 	{
 		id: "Minerales",
