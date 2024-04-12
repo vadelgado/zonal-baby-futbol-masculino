@@ -1,6 +1,6 @@
 ---
 import { RES_CUARTOS } from "@/consts/cuartos";
-import Title from "./Title.astro";
+import Title from "@/components/Title.astro";
 let teams = Array(16).fill(null);
 RES_CUARTOS.forEach((team) => {
   teams[Number(team.id) - 1] = team;
