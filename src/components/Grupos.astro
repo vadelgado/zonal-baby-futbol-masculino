@@ -1,18 +1,15 @@
 ---
 import { RES_TEAMS } from "@/consts/resTeams";
 
-let { groupName,resultadosDeseados } = Astro.props;
 let teams = Array(16).fill(null);
-
-
-
-
 RES_TEAMS.forEach((team) => {
-  const index = resultadosDeseados.indexOf((team as any).resultadoSorteo);
-  if (index !== -1) {
-    teams[resultadosDeseados[index] - 1] = team;
-  }
+  teams[Number(team.id) - 1] = team;
 });
+
+
+
+
+
 
 teams = teams.sort((a, b) => {
   const aPts = a ? a.PG * 3 + a.PE : 0;
@@ -34,15 +31,6 @@ teams = teams.sort((a, b) => {
 ---
 
 <div>
-  <h2
-    class="py-6 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
-  >
-    <span
-      class="animate-fade-in animate-delay-300 uppercase text-white bg-black px-6 mb-9 font-medium"
-    >
-    {groupName}
-    </span>
-  </h2>
   <h2
     class="text-center text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
   >
