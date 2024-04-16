@@ -25,7 +25,7 @@ export const RES_TEAMS = [
   },
   {
     id: "15",
-    name: "Talentos Sur Ipiales.",
+    name: "Deportivo Ipiales.",
     PJ: 0,
     PG: 0,
     PE: 0,
