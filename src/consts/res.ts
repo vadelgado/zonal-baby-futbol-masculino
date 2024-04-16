@@ -1,7 +1,7 @@
 export const RES_TEAMS = [
   {
     id: "1",
-    name: "Alcaldía Funes - Fénix.",  
+    name: "Alcaldía Funes - Fénix.",   
     PJ: 0,
     PG: 0,
     PE: 0,
