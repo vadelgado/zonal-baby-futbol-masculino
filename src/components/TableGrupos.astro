@@ -105,10 +105,32 @@ RES_TEAMS.forEach((team) => {
         <td class="py-3 font-semibold">EQUIPO</td>
         <td class="py-3 font-semibold"></td>
       </tr>
+
+      <tr
+      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
+    >
+      <td class="py-1 px-0 font-semibold">03:30 P.M.</td>
+      <td class="text-primary">
+        <span class="text-primary">
+          {teams[15] ? teams[15].id + " " + teams[15].name : "16"}
+        </span>
+      </td>
+      <td class="text-primary">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="text-center">-</div>
+          <div class="text-center">-</div>
+        </div>
+      </td>
+      <td class="text-primary">
+        {teams[12] ? teams[12].id + " " + teams[12].name : "13"}
+      </td>
+      <td class="text-primary"> D </td>
+    </tr>
+
       <tr
         class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
       >
-        <td class="py-1 px-0 font-semibold">03:30 P.M.</td>
+        <td class="py-1 px-0 font-semibold">04:40 P.M.</td>
         <td class="text-primary">
           <span class="text-primary">
             {teams[2] ? teams[2].id + " " + teams[2].name : "3"}
@@ -126,26 +148,8 @@ RES_TEAMS.forEach((team) => {
         <td class="text-primary"> A </td>
       </tr>
 
-      <tr
-      class="mb-10 bg-gradient-to-b from-white/20 via-transparent to-transparent p-4"
-    >
-      <td class="py-1 px-0 font-semibold">04:40 P.M.</td>
-      <td class="text-primary">
-        <span class="text-primary">
-          {teams[15] ? teams[15].id + " " + teams[15].name : "16"}
-        </span>
-      </td>
-      <td class="text-primary">
-        <div class="grid grid-cols-2 gap-2">
-          <div class="text-center">-</div>
-          <div class="text-center">-</div>
-        </div>
-      </td>
-      <td class="text-primary">
-        {teams[12] ? teams[12].id + " " + teams[12].name : "13"}
-      </td>
-      <td class="text-primary"> D </td>
-    </tr>
+
+
     </tbody>
   </table>
 
