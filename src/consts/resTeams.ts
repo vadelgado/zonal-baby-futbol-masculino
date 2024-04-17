@@ -20,7 +20,7 @@ export const RES_TEAMS = [
     PP: 0,
     GF: 2,
     GC: 1,    
-    TA: 0,
+    TA: 1,
     TR: 0,
   },
   {
@@ -32,7 +32,7 @@ export const RES_TEAMS = [
     PP: 1,
     GF: 1,
     GC: 2,    
-    TA: 0,
+    TA: 1,
     TR: 0,
   },
   {
