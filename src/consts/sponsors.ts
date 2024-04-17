@@ -78,4 +78,11 @@ export const SPONSORS = [
 		w:'auto',
 		h:`auto`,
 	},
+	{
+		id: "coacremat",
+		name: "Coperativa Coacremat",
+		url: "https://www.coacremat.coop/",
+		w:'auto',
+		h:`auto`,
+	},
 ] as const

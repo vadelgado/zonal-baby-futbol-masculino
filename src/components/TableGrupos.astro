@@ -2,6 +2,7 @@
 import { RES_TEAMS } from "@/consts/resTeams";
 import Title from "@/components/Title.astro";
 import Cuartos from "@/components/Cuartos.astro";
+import Subtitle from "@/components/Subtitle.astro";
 let teams = Array(16).fill(null);
 RES_TEAMS.forEach((team) => {
   teams[Number(team.id) - 1] = team;
@@ -128,16 +129,7 @@ RES_TEAMS.forEach((team) => {
 
 
   <Title title="Miercoles 17 de Abril 2024" />
-  <h2
-    class="text-center text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
-  >
-  I Zonal Regional BABY FÚTBOL Nariño,<br>
-  Funes, abril 16 al 21 de 2024 <br>
- Clasificatorio al Zonal Nacional Sur Occidente de Colombia 2024 
- y proyección al Festival de Festivales Medellín 2025. <br>
- CATEGORIA 2012 - 2013 <br>
- Apoyo: <span class="font-semibold" >Jamez Cundar Zambrano alcalde Funes 2024 – 2027 </span>
-  </h2>
+
 
   <div class="relative flex items-center justify-center">
     <img
@@ -236,9 +228,10 @@ RES_TEAMS.forEach((team) => {
             {teams[8] ? teams[8].id + " " + teams[8].name : "9"}
           </td>
           <td class="text-primary">
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="text-center font-bold">2</div>
               <div class="text-center">-</div>
-              <div class="text-center">-</div>
+              <div class="text-center font-bold">2</div>
             </div>
           </td>
           <td class="text-primary">
