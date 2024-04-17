@@ -1,4 +1,28 @@
 ---
 import Title from "@/components/Title.astro";
+import { RES_GOLEADORES } from "@/consts/goleadores";
+
+
 ---
-<Title title="Tabla de Goleadores" /
+<Title title="Tabla de Goleadores" />
+
+<div class="overflow-x-auto">
+    <table class="table-auto">
+        <thead>
+            <tr>
+                <th class="px-4 py-2">Nombre</th>
+                <th class="px-4 py-2">Goles</th>
+                <th class="px-4 py-2">Equipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {RES_GOLEADORES.map((equipo, index) => (
+                <tr data-key={index}>
+                    <td class="border px-4 py-2">{equipo.name}</td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</div>
+
+
