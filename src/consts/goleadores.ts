@@ -13,10 +13,45 @@ export const RES_GOLEADORES = [
   {
     id: "16",
     name: "CAR Nariño.",
+    goleadores: [
+      {
+        id: "8",
+        name: "Zlatan Bastidas",
+        goles: 1,
+      },
+      {
+        id: "7",
+        name: "Santiago Acosta",
+        goles: 1,
+      },
+    ],
+    tarjetasAmarillas: [
+      {
+        id: "10",
+        name: "Samuel Jimenez",
+        goles: 1,
+      },
+     
+    ]     
   },
   {
     id: "15",
     name: "Deportivo Ipiales.",
+    goleadores: [
+      {
+        id: "11",
+        name: "Camilo Leiton",
+        goles: 1,
+      },
+    ],
+    tarjetasAmarillas: [
+      {
+        id: "6",
+        name: "Gerson Sarasty",
+        goles: 1,
+      },
+     
+    ]
   },
   {
     id: "14",
@@ -53,6 +88,28 @@ export const RES_GOLEADORES = [
   {
     id: "6",
     name: "Sporting de Nariño.",
+    goleadores: [
+      {
+        id: "10",
+        name: "Felipe Ortega",
+        goles: 1,
+      },
+      {
+        id: "13",
+        name: "Emilio Patiño",
+        goles: 1,
+      },
+      {
+        id: "17",
+        name: "Heider Narvaez",
+        goles: 1,
+      },
+      {
+        id: "8",
+        name: "Santiago Guachavez",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "5",

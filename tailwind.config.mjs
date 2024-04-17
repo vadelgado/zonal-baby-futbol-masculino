@@ -4,7 +4,12 @@ import animations from '@midudev/tailwind-animations'
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				'table-green': '#daf3d3',
+				'table-green-cabecera': '#4EA72F',
+			  }
+		},
 	},
 	plugins: [animations],
 }
