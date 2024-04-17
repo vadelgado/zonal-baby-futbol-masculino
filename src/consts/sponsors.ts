@@ -85,4 +85,11 @@ export const SPONSORS = [
 		w:'auto',
 		h:`auto`,
 	},
+	{
+		id: "liganarino",
+		name: "Liga de Futbol de Nariño",
+		url: "https://www.ligafutbolnarino.com/",
+		w:'auto',
+		h:`auto`,
+	},
 ] as const

@@ -64,6 +64,13 @@ export const RES_GOLEADORES = [
   {
     id: "12",
     name: "Esc. W. A. Mora Samaniego",
+    goleadores: [
+      {
+        id: "11",
+        name: "Cristofer Vallejo",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "11",

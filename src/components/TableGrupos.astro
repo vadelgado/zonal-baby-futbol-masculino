@@ -3,6 +3,7 @@ import { RES_TEAMS } from "@/consts/resTeams";
 import Title from "@/components/Title.astro";
 import Cuartos from "@/components/Cuartos.astro";
 import Subtitle from "@/components/Subtitle.astro";
+import SubtitleFooter from "@/components/SubtitleFooter.astro";
 let teams = Array(16).fill(null);
 RES_TEAMS.forEach((team) => {
   teams[Number(team.id) - 1] = team;
@@ -243,9 +244,10 @@ RES_TEAMS.forEach((team) => {
             {teams[10] ? teams[10].id + " " + teams[10].name : "11"}
           </td>
           <td class="text-primary">
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="text-center font-semibold">0</div>
               <div class="text-center">-</div>
-              <div class="text-center">-</div>
+              <div class="text-center font-semibold">1</div>
             </div>
           </td>
           <td class="text-primary">
@@ -288,6 +290,8 @@ RES_TEAMS.forEach((team) => {
       </tbody>
     </table>
   </div>
+
+ 
 
   <h2
     class="my-10 text-center font-bold text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
