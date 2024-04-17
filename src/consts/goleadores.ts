@@ -124,7 +124,20 @@ export const RES_GOLEADORES = [
   },
   {
     id: "4",
-    name: "Fut. Estrellas Nariño.",
+    name: "Fut. Estrellas Ipiales.",
+    goleadores: [
+      {
+        id: "12",
+        name: "Jhostin Quiscualtus",
+        goles: 1,
+      },
+      {
+        id: "9",
+        name: "Quevin Sevillano",
+        goles: 2,
+      },
+
+    ]
   },
   {
     id: "3",
@@ -140,6 +153,11 @@ export const RES_GOLEADORES = [
         name: "Santiago Torres",
         goles: 1,
       },
+      {
+        id: "7",
+        name: "Alan Rengifo",
+        goles: 1,
+      }
     ],
     tarjetasAmarillas: [
       {
