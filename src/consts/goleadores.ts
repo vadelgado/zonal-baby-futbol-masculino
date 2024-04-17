@@ -2,30 +2,37 @@ export const RES_GOLEADORES = [
   {
     id: "1",
     name: "Alcaldía Funes - Fénix.",
+    goleadores: [
+      {
+        id: "7",
+        name: "Ferney Urbina",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "16",
-    name: "Alcaldía de Pupiales.",
-  },
-  {
-    id: "15",
-    name: "Américo Quiñones Unión.",
-  },
-  {
-    id: "14",
-    name: "Asoc. Dep. Pasto.",
-  },
-  {
-    id: "13",
-    name: "Atlético Sucre Ipiales.",
-  },
-  {
-    id: "12",
     name: "CAR Nariño.",
   },
   {
+    id: "15",
+    name: "Deportivo Ipiales.",
+  },
+  {
+    id: "14",
+    name: "Américo Quiñones Unión.",
+  },
+  {
+    id: "13",
+    name: "Leones FC Pasto",
+  },
+  {
+    id: "12",
+    name: "Esc. W. A. Mora Samaniego",
+  },
+  {
     id: "11",
-    name: "Eder Ruales Ipiales.",
+    name: "MPB Ricaurte.",
   },
   {
     id: "10",
@@ -33,15 +40,15 @@ export const RES_GOLEADORES = [
   },
   {
     id: "9",
-    name: "Fut. Estrellas Nariño.",
+    name: "Atlético Sucre Ipiales",
   },
   {
     id: "8",
-    name: "Leones FC Pasto.",
+    name: "Eder Ruales Ipiales.",
   },
   {
     id: "7",
-    name: "MPB Ricaurte.",
+    name: "Asoc. Dep. Pasto.",
   },
   {
     id: "6",
@@ -49,18 +56,42 @@ export const RES_GOLEADORES = [
   },
   {
     id: "5",
-    name: "Sueño Fútbol Cumbal.",
+    name: "Alcaldía Pupiales.",
   },
   {
     id: "4",
-    name: "Talentos Sur Ipiales.",
+    name: "Fut. Estrellas Nariño.",
   },
   {
     id: "3",
     name: "Esc. Dep. Pasto '13.",
+    goleadores: [
+      {
+        id: "17",
+        name: "Fredy Muñoz",
+        goles: 1,
+      },
+      {
+        id: "3",
+        name: "Santiago Torres",
+        goles: 1,
+      },
+    ],
+    tarjetasAmarillas: [
+      {
+        id: "18",
+        name: "Ian Delgado",
+        goles: 1,
+      },
+      {
+        id: "5",
+        name: "Jacobo Rojas",
+        goles: 1,
+      },      
+    ]     
   },
   {
     id: "2",
-    name: "Esc. W. A. Mora Samaniego.",
+    name: "Sueño Fútbol Cumbal.",
   },
 ] as const;
