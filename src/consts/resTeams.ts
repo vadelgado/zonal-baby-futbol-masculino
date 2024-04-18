@@ -8,7 +8,7 @@ export const RES_TEAMS = [
     PP: 1+1,
 
     GF: 1+2,
-    GC: 2+1,    
+    GC: 2+3,    
     
     TA: 0+0,
     TR: 0+0,
@@ -71,17 +71,17 @@ export const RES_TEAMS = [
   },
   {
     id: "12",
-    name: "Esc. W. A. Mora Samaniego",
+    name: "Esc. W.A.Mora Samaniego",
     PJ: 1+1,
     PG: 1+1,
-    PE: 0,
-    PP: 0,
+    PE: 0+0,
+    PP: 0+0,
 
     GF: 1+2,
-    GC: 0,    
+    GC: 0+0,    
     
-    TA: 0,
-    TR: 0,
+    TA: 0+2,
+    TR: 0+0,
   },
   {
     id: "11",
@@ -108,7 +108,7 @@ export const RES_TEAMS = [
     GF: 2+3,
     GC: 2+1,    
     
-    TA: 0+3,
+    TA: 2+3,
     TR: 0+0,
   },
   {
@@ -116,8 +116,8 @@ export const RES_TEAMS = [
     name: "Atlético Sucre Ipiales",
     PJ: 1+1,
     PG: 0+0,
-    PE: 1+1,
-    PP: 0+0,
+    PE: 1+0,
+    PP: 0+1,
 
     GF: 2+0,
     GC: 2+2,    
@@ -206,7 +206,7 @@ export const RES_TEAMS = [
     GF: 2+1,
     GC: 1+4,    
     
-    TA: 1+0,
+    TA: 2+0,
     TR: 0+0,
   },
   {
