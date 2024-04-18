@@ -6,7 +6,7 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Ferney Urbina",
-        goles: 1+1,
+        goles: 2,
       },
       {
         id: "17",
@@ -61,10 +61,20 @@ export const RES_GOLEADORES = [
   {
     id: "14",
     name: "Américo Quiñones Unión.",
+    goleadores: [
+      {
+        
+      }
+    ],
   },
   {
     id: "13",
     name: "Leones FC Pasto",
+    goleadores: [
+      {
+        
+      }
+    ],
   },
   {
     id: "12",
@@ -75,11 +85,28 @@ export const RES_GOLEADORES = [
         name: "Cristofer Vallejo",
         goles: 1,
       },
+      {
+        id: "6",
+        name: "Estiven Torres",
+        goles: 1,
+      },
+      {
+        id: "9",
+        name: "Nikolas Gonzales",
+        goles: 1,
+      },
     ],
   },
   {
     id: "11",
     name: "MPB Ricaurte.",
+    goleadores: [
+      {
+        id: "8",
+        name: "Daniel Guanga",
+        goles: 1,
+      }
+    ],
   },
   {
     id: "10",
@@ -88,11 +115,21 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Jair Rosas",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "16",
         name: "Treymar Mera",
+        goles: 1,
+      },
+      {
+        id: "9",
+        name: "Samuel Perez",
+        goles: 1,
+      },
+      {
+        id: "11",
+        name: "Dylan Benavidez",
         goles: 1,
       },
     ],
@@ -105,8 +142,18 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Jair Rosas",
+        goles: 2,
+      },
+      {
+        id: "1",
+        name: "Josue Arias",
         goles: 1,
-      }
+      },
+      {
+        id: "6",
+        name: "Matniat Bastidas",
+        goles: 1,
+      },
      
     ]
 
@@ -134,12 +181,12 @@ export const RES_GOLEADORES = [
       {
         id: "5",
         name: "Iker Portilla",
-        goles: 1+2,
+        goles: 3,
       },
       {
         id: "8",
         name: "Jose Chalapud",
-        goles: 1+3,
+        goles: 4,
       },
     ],
   },
@@ -160,12 +207,12 @@ export const RES_GOLEADORES = [
       {
         id: "14",
         name: "Emanuel Monzon",
-        goles: 1+2,
+        goles: 3,
       },
       {
         id: "10",
         name: "Daniel España",
-        goles: 4+3,
+        goles: 7,
       },
       {
         id: "9",
@@ -193,7 +240,7 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Cristian Ortega",
-        goles: 1+1,
+        goles: 2,
       },
       {
         id: "13",
@@ -239,6 +286,11 @@ export const RES_GOLEADORES = [
   {
     id: "5",
     name: "Alcaldía Pupiales.",
+    goleadores: [
+      {
+        
+      }
+    ],
   },
   {
     id: "4",
