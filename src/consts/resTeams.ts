@@ -221,6 +221,6 @@ export const RES_TEAMS = [
     GC: 2+1,    
     
     TA: 0+1,
-    TR: 0+1,
+    TR: 0+0,
   },
 ] as const;
