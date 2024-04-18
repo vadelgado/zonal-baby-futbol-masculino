@@ -2,16 +2,16 @@ export const RES_TEAMS = [
   {
     id: "1",
     name: "Alcaldía Funes - Fénix.",  
-    PJ: 1+1,
-    PG: 0+0,
-    PE: 0+0,
-    PP: 1+1,
+    PJ: 1+1+1,
+    PG: 0+0+0,
+    PE: 0+0+0,
+    PP: 1+1+1,
 
-    GF: 1+2,
-    GC: 2+3,    
+    GF: 1+2+2,
+    GC: 2+3+12,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+0,
+    TR: 0+0+0,
   },
   {
     id: "16",
@@ -184,16 +184,16 @@ export const RES_TEAMS = [
   {
     id: "4",
     name: "Fut. Estrellas Ipiales.",
-    PJ: 1,
-    PG: 1,
-    PE: 0,
-    PP: 0,
+    PJ: 1+1,
+    PG: 1+1,
+    PE: 0+0,
+    PP: 0+0,
 
-    GF: 4,
-    GC: 1,    
+    GF: 4+12,
+    GC: 1+2,    
     
-    TA: 0,
-    TR: 0,
+    TA: 0+0,
+    TR: 0+0,
   },
   {
     id: "3",

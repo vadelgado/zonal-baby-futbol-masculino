@@ -6,11 +6,16 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Ferney Urbina",
-        goles: 2,
+        goles: 2+1,
       },
       {
         id: "17",
         name: "Edgar Muñoz",
+        goles: 1,
+      },
+      {
+        id: "10",
+        name: "Andres Hernandes",
         goles: 1,
       },
     ],
@@ -383,7 +388,37 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Quevin Sevillano",
+        goles: 3,
+      },
+      {
+        id: "6",
+        name: "Juan Narvaez",
         goles: 2,
+      },
+      {
+        id: "7",
+        name: "Sebastian Cabezas",
+        goles: 2,
+      },
+      {
+        id: "5",
+        name: "Sebastian Narvaez",
+        goles: 1,
+      },
+      {
+        id: "10",
+        name: "Sebastial Cuajal",
+        goles: 3,
+      },
+      {
+        id: "11",
+        name: "Gabriel Chungana",
+        goles: 2,
+      },
+      {
+        id: "16",
+        name: "Jesus Acosta",
+        goles: 1,
       },
       {
         id: "0",
