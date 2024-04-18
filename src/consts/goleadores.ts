@@ -134,12 +134,12 @@ export const RES_GOLEADORES = [
       {
         id: "5",
         name: "Iker Portilla",
-        goles: 1,
+        goles: 1+2,
       },
       {
         id: "8",
         name: "Jose Chalapud",
-        goles: 1,
+        goles: 1+3,
       },
     ],
   },
@@ -159,22 +159,32 @@ export const RES_GOLEADORES = [
       },
       {
         id: "14",
-        name: "Roberth Monzon",
-        goles: 1,
+        name: "Emanuel Monzon",
+        goles: 1+2,
       },
       {
         id: "10",
         name: "Daniel España",
-        goles: 4,
+        goles: 4+3,
       },
       {
         id: "9",
         name: "Juan Molina",
         goles: 1,
-      }
-
-      
+      },
+      {
+        id: "4",
+        name: "Neider Estupiñan",
+        goles: 1,
+      }, 
     ],
+    tarjetasAmarillas: [
+      {
+        id: "4",
+        name: "Neider Estupiñan",
+        goles: 1,
+      },
+    ]
   },
   {
     id: "6",
@@ -182,8 +192,8 @@ export const RES_GOLEADORES = [
     goleadores: [
       {
         id: "10",
-        name: "Felipe Ortega",
-        goles: 1,
+        name: "Cristian Ortega",
+        goles: 1+1,
       },
       {
         id: "13",
@@ -200,7 +210,31 @@ export const RES_GOLEADORES = [
         name: "Santiago Guachavez",
         goles: 1,
       },
+      {
+        id: "2",
+        name: "Joseph Patiño",
+        goles: 1,
+      },
+      {
+        id: "3",
+        name: "Santiago Gutierrez",
+        goles: 1,
+      }
     ],
+    tarjetasAmarillas: [
+      {
+        id: "2",
+        name: "Joseph Patiño",
+        goles: 1,
+      },
+      {
+        id: "4",
+        name: "Juan Santacruz",
+        goles: 1,
+      }
+    ]
+
+
   },
   {
     id: "5",
