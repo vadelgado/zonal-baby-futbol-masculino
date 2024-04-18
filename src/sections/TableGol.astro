@@ -1,27 +1,46 @@
 ---
 import { RES_GOLEADORES } from "@/consts/goleadores";
+import Title from "@/components/Title.astro";
+import Subtitle from "@/components/Subtitle.astro";
+import SubtitleFooter from "@/components/SubtitleFooter.astro";
 
 ---
-<table>
-    <thead>
-        <tr>
-            <th>Equipo</th>
-            <th>Goleador</th>
-            <th>Goles</th>
-        </tr>
-    </thead>
-    <tbody>
-        {RES_GOLEADORES.map((equipo) => (
-            equipo.goleadores && equipo.goleadores.map((goleador: any) => (
-                <tr data-key={goleador.id}>
-                    <td>{equipo.name}</td>
-                    <td>{goleador.name}</td>
-                    <td>{goleador.goles}</td>
-                </tr>
-            ))
-        ))}
-    </tbody>
-</table>
+<Subtitle/>
+<Title title="Tabla de Goles" />
+<div class="relative flex items-center justify-center">
+    <img
+      src="babyfutbol.webp"
+      alt="Background Image"
+      class="absolute w-auto h-72 object-cover opacity-15"
+    />
+    <table
+    class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+    >
+        <thead>
+            <tr class="mb-10 bg-table-green-cabecera text-white p-4">
+                <th class="py-3 font-semibold">Equipo</th>
+                <th class="py-3 font-semibold"># Camiseta</th>
+                <th class="py-3 font-semibold">Goleador</th>
+                <th class="py-3 font-semibold">Goles</th>
+            </tr>
+        </thead>
+        <tbody>
+            {RES_GOLEADORES.map((equipo) => (
+                equipo.goleadores && equipo.goleadores.map((goleador: any) => (
+                    <tr data-key={goleador.id} class="mb-10 bg-table-green p-4">
+                        <td >{equipo.name}</td>
+                        <td class="py-1 px-0 font-semibold">{goleador.id}</td>
+                        <td class="py-1 px-0 font-semibold">{goleador.name}</td>
+                        <td>{goleador.goles}</td>
+                    </tr>
+                ))
+            ))}
+        </tbody>
+    </table>
+
+</div>
+
+<SubtitleFooter/>
 
 
 

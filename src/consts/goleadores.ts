@@ -48,11 +48,21 @@ export const RES_GOLEADORES = [
         name: "Camilo Leiton",
         goles: 1,
       },
+      {
+        id: "7",
+        name: "Samuel Suluaga",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
         id: "6",
         name: "Gerson Sarasty",
+        goles: 1,
+      },
+      {
+        id: "11",
+        name: "Camilo Leiton",
         goles: 1,
       },
      
@@ -63,9 +73,25 @@ export const RES_GOLEADORES = [
     name: "Américo Quiñones Unión.",
     goleadores: [
       {
+        id: "2",
+        name: "Emanuel Meneses",
+        goles: 1,
         
-      }
+      },
+      {
+        id: "7",
+        name: "Manuel Burbano",
+        goles: 1,
+        
+      },
     ],
+      tarjetasAmarillas: [
+        {
+          id: "8",
+          name: "Dylan Meneses",
+          goles: 1,
+        },
+      ]
   },
   {
     id: "13",
