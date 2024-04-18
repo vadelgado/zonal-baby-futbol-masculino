@@ -29,6 +29,11 @@ export const RES_GOLEADORES = [
         name: "Santiago Acosta",
         goles: 1,
       },
+      {
+        id: "11",
+        name: "Santiago Rubio",
+        goles: 3,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -36,8 +41,12 @@ export const RES_GOLEADORES = [
         name: "Samuel Jimenez",
         goles: 1,
       },
-     
-    ]     
+      {
+        id: "6",
+        name: "Samuel Vallejo",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "15",
@@ -65,8 +74,7 @@ export const RES_GOLEADORES = [
         name: "Camilo Leiton",
         goles: 1,
       },
-     
-    ]
+    ],
   },
   {
     id: "14",
@@ -76,30 +84,42 @@ export const RES_GOLEADORES = [
         id: "2",
         name: "Emanuel Meneses",
         goles: 1,
-        
       },
       {
         id: "7",
         name: "Manuel Burbano",
         goles: 1,
-        
       },
     ],
-      tarjetasAmarillas: [
-        {
-          id: "8",
-          name: "Dylan Meneses",
-          goles: 1,
-        },
-      ]
+    tarjetasAmarillas: [
+      {
+        id: "8",
+        name: "Dylan Meneses",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "13",
     name: "Leones FC Pasto",
     goleadores: [
       {
-        
-      }
+        id: "16",
+        name: "Juan Almeida",
+        goles: 1,
+      },
+    ],
+    tarjetasAmarillas: [
+      {
+        id: "16",
+        name: "Juan Almeida",
+        goles: 1,
+      },
+      {
+        id: "7",
+        name: "Juan Revelo",
+        goles: 1,
+      },
     ],
   },
   {
@@ -131,7 +151,7 @@ export const RES_GOLEADORES = [
         id: "8",
         name: "Daniel Guanga",
         goles: 1,
-      }
+      },
     ],
   },
   {
@@ -141,7 +161,7 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Jair Rosas",
-        goles: 1+1,
+        goles: 1 + 1,
       },
       {
         id: "16",
@@ -180,9 +200,7 @@ export const RES_GOLEADORES = [
         name: "Matniat Bastidas",
         goles: 1,
       },
-     
-    ]
-
+    ],
   },
   {
     id: "9",
@@ -249,7 +267,7 @@ export const RES_GOLEADORES = [
         id: "4",
         name: "Neider Estupiñan",
         goles: 1,
-      }, 
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -257,7 +275,7 @@ export const RES_GOLEADORES = [
         name: "Neider Estupiñan",
         goles: 1,
       },
-    ]
+    ],
   },
   {
     id: "6",
@@ -292,7 +310,7 @@ export const RES_GOLEADORES = [
         id: "3",
         name: "Santiago Gutierrez",
         goles: 1,
-      }
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -304,19 +322,13 @@ export const RES_GOLEADORES = [
         id: "4",
         name: "Juan Santacruz",
         goles: 1,
-      }
-    ]
-
-
+      },
+    ],
   },
   {
     id: "5",
     name: "Alcaldía Pupiales.",
-    goleadores: [
-      {
-        
-      }
-    ],
+    goleadores: [{}],
   },
   {
     id: "4",
@@ -332,8 +344,7 @@ export const RES_GOLEADORES = [
         name: "Quevin Sevillano",
         goles: 2,
       },
-
-    ]
+    ],
   },
   {
     id: "3",
@@ -353,7 +364,7 @@ export const RES_GOLEADORES = [
         id: "7",
         name: "Alan Rengifo",
         goles: 1,
-      }
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -365,8 +376,8 @@ export const RES_GOLEADORES = [
         id: "5",
         name: "Jacobo Rojas",
         goles: 1,
-      },      
-    ]     
+      },
+    ],
   },
   {
     id: "2",

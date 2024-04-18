@@ -16,16 +16,16 @@ export const RES_TEAMS = [
   {
     id: "16",
     name: "CAR Nariño.",
-    PJ: 1,
-    PG: 1,
-    PE: 0,
-    PP: 0,
+    PJ: 1+1,
+    PG: 1+1,
+    PE: 0+0,
+    PP: 0+0,
 
-    GF: 2,
-    GC: 1,    
+    GF: 2+3,
+    GC: 1+1,    
     
-    TA: 1,
-    TR: 0,
+    TA: 1+0,
+    TR: 0+1,
   },
   {
     id: "15",
@@ -58,16 +58,16 @@ export const RES_TEAMS = [
   {
     id: "13",
     name: "Leones FC Pasto",
-    PJ: 1,
-    PG: 1,
-    PE: 0,
-    PP: 0,
+    PJ: 1+1,
+    PG: 1+0,
+    PE: 0+0,
+    PP: 0+1,
 
-    GF: 2,
-    GC: 1,    
+    GF: 2+1,
+    GC: 1+3,    
     
-    TA: 0,
-    TR: 0,
+    TA: 0+2,
+    TR: 0+0,
   },
   {
     id: "12",
