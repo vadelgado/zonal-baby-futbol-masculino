@@ -62,6 +62,11 @@ export const RES_GOLEADORES = [
         name: "Samuel Suluaga",
         goles: 1,
       },
+      {
+        id: "0",
+        name: "Auto Gol",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -83,7 +88,7 @@ export const RES_GOLEADORES = [
       {
         id: "2",
         name: "Emanuel Meneses",
-        goles: 1,
+        goles: 2,
       },
       {
         id: "7",
@@ -104,9 +109,14 @@ export const RES_GOLEADORES = [
     name: "Leones FC Pasto",
     goleadores: [
       {
+        id: "1",
+        name: "Juan Guerrero",
+        goles: 1,
+      },
+      {
         id: "16",
         name: "Juan Almeida",
-        goles: 1,
+        goles: 2,
       },
     ],
     tarjetasAmarillas: [
@@ -343,6 +353,11 @@ export const RES_GOLEADORES = [
         id: "9",
         name: "Quevin Sevillano",
         goles: 2,
+      },
+      {
+        id: "0",
+        name: "Auto Gol",
+        goles: 1,
       },
     ],
   },
