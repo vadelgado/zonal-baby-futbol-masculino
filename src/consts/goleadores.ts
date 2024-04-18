@@ -6,6 +6,11 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Ferney Urbina",
+        goles: 1+1,
+      },
+      {
+        id: "17",
+        name: "Edgar Muñoz",
         goles: 1,
       },
     ],
@@ -79,18 +84,97 @@ export const RES_GOLEADORES = [
   {
     id: "10",
     name: "Estudiantes Pasto.",
+    goleadores: [
+      {
+        id: "8",
+        name: "Jair Rosas",
+        goles: 1,
+      },
+      {
+        id: "16",
+        name: "Treymar Mera",
+        goles: 1,
+      },
+    ],
+    tarjetasAmarillas: [
+      {
+        id: "4",
+        name: "Nicolas Lopez",
+        goles: 1,
+      },
+      {
+        id: "8",
+        name: "Jair Rosas",
+        goles: 1,
+      }
+     
+    ]
+
   },
   {
     id: "9",
     name: "Atlético Sucre Ipiales",
+    goleadores: [
+      {
+        id: "17",
+        name: "Manuel Belalcazar",
+        goles: 1,
+      },
+      {
+        id: "11",
+        name: "Camilo Portilla",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "8",
     name: "Eder Ruales Ipiales.",
+    goleadores: [
+      {
+        id: "5",
+        name: "Iker Portilla",
+        goles: 1,
+      },
+      {
+        id: "8",
+        name: "Jose Chalapud",
+        goles: 1,
+      },
+    ],
   },
   {
     id: "7",
     name: "Asoc. Dep. Pasto.",
+    goleadores: [
+      {
+        id: "11",
+        name: "Esteban Burbano",
+        goles: 1,
+      },
+      {
+        id: "7",
+        name: "Darek Rodero",
+        goles: 1,
+      },
+      {
+        id: "14",
+        name: "Roberth Monzon",
+        goles: 1,
+      },
+      {
+        id: "10",
+        name: "Daniel España",
+        goles: 4,
+      },
+      {
+        id: "9",
+        name: "Juan Molina",
+        goles: 1,
+      }
+
+      
+    ],
   },
   {
     id: "6",
@@ -128,7 +212,7 @@ export const RES_GOLEADORES = [
     goleadores: [
       {
         id: "12",
-        name: "Jhostin Quiscualtus",
+        name: "Jhostin Quiscualtud",
         goles: 1,
       },
       {
@@ -175,5 +259,22 @@ export const RES_GOLEADORES = [
   {
     id: "2",
     name: "Sueño Fútbol Cumbal.",
+    goleadores: [
+      {
+        id: "6",
+        name: "Juan Guerrero",
+        goles: 1,
+      },
+      {
+        id: "11",
+        name: "Samir Piarpuezan",
+        goles: 1,
+      },
+      {
+        id: "10",
+        name: "Jose Guartarrilla",
+        goles: 1,
+      },
+    ],
   },
 ] as const;
