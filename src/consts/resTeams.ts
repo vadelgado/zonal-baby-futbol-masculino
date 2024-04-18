@@ -45,7 +45,7 @@ export const RES_TEAMS = [
     id: "14",
     name: "Américo Quiñones Unión.",
     PJ: 1+1,
-    PG: 0+1,
+    PG: 0+0,
     PE: 0+1,
     PP: 1+0,
 
