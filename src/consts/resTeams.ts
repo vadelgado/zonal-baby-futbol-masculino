@@ -220,7 +220,7 @@ export const RES_TEAMS = [
     GF: 3+0,
     GC: 2+1,    
     
-    TA: 0+1,
+    TA: 0+0,
     TR: 0+0,
   },
 ] as const;
