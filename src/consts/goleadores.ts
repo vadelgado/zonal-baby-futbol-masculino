@@ -14,6 +14,8 @@ export const RES_GOLEADORES = [
         goles: 1,
       },
     ],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
   {
     id: "16",
@@ -39,12 +41,14 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Samuel Jimenez",
-        goles: 1,
+        amarillas: 1,
       },
+    ],
+    tarjetasRojas: [
       {
         id: "6",
         name: "Samuel Vallejo",
-        goles: 1,
+        rojas: 1,
       },
     ],
   },
@@ -72,14 +76,15 @@ export const RES_GOLEADORES = [
       {
         id: "6",
         name: "Gerson Sarasty",
-        goles: 1,
+        amarillas: 1,
       },
       {
         id: "11",
         name: "Camilo Leiton",
-        goles: 1,
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "14",
@@ -100,9 +105,10 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Dylan Meneses",
-        goles: 1,
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "13",
@@ -123,14 +129,15 @@ export const RES_GOLEADORES = [
       {
         id: "16",
         name: "Juan Almeida",
-        goles: 1,
+        amarillas: 1,
       },
       {
         id: "7",
         name: "Juan Revelo",
-        goles: 1,
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "12",
@@ -152,6 +159,19 @@ export const RES_GOLEADORES = [
         goles: 1,
       },
     ],
+    tarjetasAmarillas: [
+      {
+        id: "6",
+        name: "Estiven Torres",
+        amarillas: 1,
+      },
+      {
+        id: "9",
+        name: "Nicolas Gonzales",
+        amarillas: 1,
+      },
+    ],
+    tarjetasRojas: [{}],
   },
   {
     id: "11",
@@ -163,6 +183,8 @@ export const RES_GOLEADORES = [
         goles: 1,
       },
     ],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
   {
     id: "10",
@@ -193,24 +215,25 @@ export const RES_GOLEADORES = [
       {
         id: "4",
         name: "Nicolas Lopez",
-        goles: 1,
+        amarillas: 1,
       },
       {
         id: "8",
         name: "Jair Rosas",
-        goles: 2,
+        amarillas: 2,
       },
       {
         id: "1",
         name: "Josue Arias",
-        goles: 1,
+        amarillas: 1,
       },
       {
         id: "6",
         name: "Matniat Bastidas",
-        goles: 1,
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "9",
@@ -227,6 +250,8 @@ export const RES_GOLEADORES = [
         goles: 1,
       },
     ],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
   {
     id: "8",
@@ -243,6 +268,8 @@ export const RES_GOLEADORES = [
         goles: 4,
       },
     ],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
   {
     id: "7",
@@ -283,9 +310,10 @@ export const RES_GOLEADORES = [
       {
         id: "4",
         name: "Neider Estupiñan",
-        goles: 1,
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "6",
@@ -326,19 +354,22 @@ export const RES_GOLEADORES = [
       {
         id: "2",
         name: "Joseph Patiño",
-        goles: 1,
+        amarillas: 1,
       },
       {
         id: "4",
         name: "Juan Santacruz",
-        goles: 1,
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "5",
     name: "Alcaldía Pupiales.",
     goleadores: [{}],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
   {
     id: "4",
@@ -360,6 +391,8 @@ export const RES_GOLEADORES = [
         goles: 1,
       },
     ],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
   {
     id: "3",
@@ -380,19 +413,30 @@ export const RES_GOLEADORES = [
         name: "Alan Rengifo",
         goles: 1,
       },
+      {
+        id: "0",
+        name: "Auto Gol",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
         id: "18",
         name: "Ian Delgado",
-        goles: 1,
+        amarillas: 1,
       },
       {
         id: "5",
         name: "Jacobo Rojas",
-        goles: 1,
+        amarillas: 1,
+      },
+      {
+        id: "10",
+        name: "Emmanuel Jojoa",
+        amarillas: 1,
       },
     ],
+    tarjetasRojas: [{}],
   },
   {
     id: "2",
@@ -414,5 +458,7 @@ export const RES_GOLEADORES = [
         goles: 1,
       },
     ],
+    tarjetasAmarillas: [{}],
+    tarjetasRojas: [{}],
   },
 ] as const;

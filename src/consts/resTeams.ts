@@ -198,29 +198,29 @@ export const RES_TEAMS = [
   {
     id: "3",
     name: "Esc. Dep. Pasto '13.",
+    PJ: 1+1+1,
+    PG: 1+0+1,
+    PE: 0+0+0,
+    PP: 0+1+0,
+
+    GF: 2+1+1,
+    GC: 1+4+0,    
+    
+    TA: 2+0+1,
+    TR: 0+0+0,
+  },
+  {
+    id: "2",
+    name: "Sueño Fútbol Cumbal.",
     PJ: 1+1,
     PG: 1+0,
     PE: 0+0,
     PP: 0+1,
 
-    GF: 2+1,
-    GC: 1+4,    
+    GF: 3+0,
+    GC: 2+1,    
     
-    TA: 2+0,
-    TR: 0+0,
-  },
-  {
-    id: "2",
-    name: "Sueño Fútbol Cumbal.",
-    PJ: 1,
-    PG: 1,
-    PE: 0,
-    PP: 0,
-
-    GF: 3,
-    GC: 2,    
-    
-    TA: 0,
-    TR: 0,
+    TA: 0+1,
+    TR: 0+1,
   },
 ] as const;
