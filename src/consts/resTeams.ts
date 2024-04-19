@@ -72,16 +72,16 @@ export const RES_TEAMS = [
   {
     id: "12",
     name: "Esc. W.A.Mora Samaniego",
-    PJ: 1+1,
-    PG: 1+1,
-    PE: 0+0,
-    PP: 0+0,
+    PJ: 1+1+1,
+    PG: 1+1+1,
+    PE: 0+0+0,
+    PP: 0+0+0,
 
-    GF: 1+2,
-    GC: 0+0,    
+    GF: 1+2+1,
+    GC: 0+0+0,    
     
-    TA: 0+2,
-    TR: 0+0,
+    TA: 0+2+0,
+    TR: 0+0+0,
   },
   {
     id: "11",
@@ -100,16 +100,16 @@ export const RES_TEAMS = [
   {
     id: "10",
     name: "Estudiantes Pasto.",
-    PJ: 1+1,
-    PG: 0+1,
-    PE: 1+0,
-    PP: 0+0,
+    PJ: 1+1+1,
+    PG: 0+1+0,
+    PE: 1+0+0,
+    PP: 0+0+1,
 
-    GF: 2+3,
-    GC: 2+1,    
+    GF: 2+3+0,
+    GC: 2+1+1,    
     
-    TA: 2+3,
-    TR: 0+0,
+    TA: 2+3+0,
+    TR: 0+0+0,
   },
   {
     id: "9",

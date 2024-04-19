@@ -163,6 +163,11 @@ export const RES_GOLEADORES = [
         name: "Nikolas Gonzales",
         goles: 1,
       },
+      {
+        id: "13",
+        name: "Lucas Gomez",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
