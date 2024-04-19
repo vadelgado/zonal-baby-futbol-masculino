@@ -1,19 +1,22 @@
 --- 
 import { RES_CUARTOS } from "@/consts/cuartos";
+import Subtitle from "@/components/Subtitle.astro";
+import SubtitleFooter from "@/components/SubtitleFooter.astro";
 import Title from "@/components/Title.astro";
 let teams = Array(16).fill(null);
 RES_CUARTOS.forEach((team) => {
   teams[Number(team.id) - 1] = team;
 });
 ---
-
+<Subtitle/>
 <section
-  class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+  class="mt-4 text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
 >
   Cuartos de Final:
   <span class="font-bold"> Sábado 20 de abril</span>
   de 2024 Estadio Municipal Funes.
   <span class="mt-2">👀 Clasifican los 8 Primeros equipos estos son por reclasificación general de todos los grupos</span>
+  
   <div>INICIACIÓN DEL PARTIDO HORA EXACTA</div>
 </section>
 
@@ -110,6 +113,7 @@ RES_CUARTOS.forEach((team) => {
     </tr>
   </tbody>
 </table>
+<SubtitleFooter/>
 
 <Title title="Semifinal" />
 <section

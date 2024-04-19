@@ -30,16 +30,16 @@ export const RES_TEAMS = [
   {
     id: "15",
     name: "Deportivo Ipiales.",
-    PJ: 1+1,
-    PG: 0+0,
-    PE: 0+1,
-    PP: 1+0,
+    PJ: 1+1+1,
+    PG: 0+0+0,
+    PE: 0+1+0,
+    PP: 1+0+1,
 
-    GF: 1+2,
-    GC: 2+2,    
+    GF: 1+2+2,
+    GC: 2+2+3,    
     
-    TA: 1+1,
-    TR: 0,
+    TA: 1+1+0,
+    TR: 0+0+0,
   },
   {
     id: "14",
@@ -58,16 +58,16 @@ export const RES_TEAMS = [
   {
     id: "13",
     name: "Leones FC Pasto",
-    PJ: 1+1,
-    PG: 1+0,
-    PE: 0+0,
-    PP: 0+1,
+    PJ: 1+1+1,
+    PG: 1+0+1,
+    PE: 0+0+0,
+    PP: 0+1+0,
 
-    GF: 2+1,
-    GC: 1+3,    
+    GF: 2+1+3,
+    GC: 1+3+2,    
     
-    TA: 0+2,
-    TR: 0+0,
+    TA: 0+2+1,
+    TR: 0+0+0,
   },
   {
     id: "12",

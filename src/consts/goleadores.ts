@@ -86,6 +86,16 @@ export const RES_GOLEADORES = [
         name: "Auto Gol",
         goles: 1,
       },
+      {
+        id: "10",
+        name: "Samuel Velasquez",
+        goles: 1,
+      },
+      {
+        id: "16",
+        name: "Kevin Perez",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -137,23 +147,28 @@ export const RES_GOLEADORES = [
       {
         id: "1",
         name: "Juan Guerrero",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "16",
-        name: "Juan Almeida",
-        goles: 2,
+        name: "Camilo Almeida",
+        goles: 2+2,
       },
     ],
     tarjetasAmarillas: [
       {
         id: "16",
-        name: "Juan Almeida",
+        name: "Camilo Almeida",
         amarillas: 1,
       },
       {
         id: "7",
         name: "Juan Revelo",
+        amarillas: 1,
+      },
+      {
+        id: "1",
+        name: "Juan Guerrero",
         amarillas: 1,
       },
     ],
