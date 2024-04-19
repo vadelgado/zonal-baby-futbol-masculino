@@ -313,7 +313,11 @@ export const RES_GOLEADORES = [
         goles: 4,
       },
     ],
-    tarjetasAmarillas: [{}],
+    tarjetasAmarillas: [      {
+      id: "2",
+      name: "Felipe Villarreal",
+      amarillas: 1,
+    },],
     tarjetasRojas: [{}],
   },
   {
@@ -366,8 +370,8 @@ export const RES_GOLEADORES = [
     goleadores: [
       {
         id: "10",
-        name: "Cristian Ortega",
-        goles: 2,
+        name: "Felipe Ortega",
+        goles: 2+1,
       },
       {
         id: "13",
@@ -394,6 +398,11 @@ export const RES_GOLEADORES = [
         name: "Santiago Gutierrez",
         goles: 1,
       },
+      {
+        id: "7",
+        name: "Falcao Botina",
+        goles: 2,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -404,6 +413,16 @@ export const RES_GOLEADORES = [
       {
         id: "4",
         name: "Juan Santacruz",
+        amarillas: 1,
+      },
+      {
+        id: "11",
+        name: "Jacobo Romero",
+        amarillas: 1,
+      },
+      {
+        id: "6",
+        name: "Tomas Rueda",
         amarillas: 1,
       },
     ],

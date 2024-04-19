@@ -128,16 +128,16 @@ export const RES_TEAMS = [
   {
     id: "8",
     name: "Eder Ruales Ipiales.",
-    PJ: 1+1,
-    PG: 0+1,
-    PE: 0+0,
-    PP: 1+0,
+    PJ: 1+1+1,
+    PG: 0+1+0,
+    PE: 0+0+0,
+    PP: 1+0+1,
 
-    GF: 2+5,
-    GC: 8+0,    
+    GF: 2+5+0,
+    GC: 8+0+3,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+1,
+    TR: 0+0+0,
   },
   {
     id: "7",
@@ -156,16 +156,16 @@ export const RES_TEAMS = [
   {
     id: "6",
     name: "Sporting de Nariño.",
-    PJ: 1+1,
-    PG: 1+0,
-    PE: 0+0,
-    PP: 0+1,
+    PJ: 1+1+1,
+    PG: 1+0+1,
+    PE: 0+0+0,
+    PP: 0+1+0,
 
-    GF: 4+3,
-    GC: 0+6,    
+    GF: 4+3+3,
+    GC: 0+6+0,    
     
-    TA: 0+2,
-    TR: 0+0,
+    TA: 0+2+2,
+    TR: 0+0+0,
   },
   {
     id: "5",
