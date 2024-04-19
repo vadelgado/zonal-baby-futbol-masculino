@@ -29,7 +29,7 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Zlatan Bastidas",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "7",
@@ -41,11 +41,21 @@ export const RES_GOLEADORES = [
         name: "Santiago Rubio",
         goles: 3,
       },
+      {
+        id: "2",
+        name: "Santiago Timana",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
         id: "10",
         name: "Samuel Jimenez",
+        amarillas: 1,
+      },
+      {
+        id: "9",
+        name: "Thiago Mafla",
         amarillas: 1,
       },
     ],
@@ -103,13 +113,18 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Manuel Burbano",
-        goles: 1,
+        goles: 1+2,
       },
     ],
     tarjetasAmarillas: [
       {
         id: "8",
         name: "Dylan Meneses",
+        amarillas: 1,
+      },
+      {
+        id: "2",
+        name: "Emmanuel Meneses",
         amarillas: 1,
       },
     ],
