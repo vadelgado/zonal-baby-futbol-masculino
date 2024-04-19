@@ -189,7 +189,7 @@ export const RES_TEAMS = [
     PE: 0+0+0,
     PP: 0+0+0,
 
-    GF: 4+12+3,
+    GF: 4+12+5,
     GC: 1+2+1,    
     
     TA: 0+0+0,
