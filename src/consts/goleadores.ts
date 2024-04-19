@@ -459,18 +459,18 @@ export const RES_GOLEADORES = [
       },
       {
         id: "9",
-        name: "Quevin Sevillano",
-        goles: 3,
+        name: "Kevin Sevillano",
+        goles: 3+1,
       },
       {
         id: "6",
         name: "Juan Narvaez",
-        goles: 2,
+        goles: 2+1,
       },
       {
         id: "7",
         name: "Sebastian Cabezas",
-        goles: 2,
+        goles: 2+2,
       },
       {
         id: "5",
@@ -485,7 +485,7 @@ export const RES_GOLEADORES = [
       {
         id: "11",
         name: "Gabriel Chungana",
-        goles: 2,
+        goles: 2+1,
       },
       {
         id: "16",
@@ -562,6 +562,12 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Jose Guartarrilla",
+        goles: 1,
+      },
+      ,
+      {
+        id: "11",
+        name: "Adrian Chavez",
         goles: 1,
       },
     ],
