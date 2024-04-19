@@ -342,16 +342,29 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Daniel España",
-        goles: 7,
+        goles: 7+2,
       },
       {
         id: "9",
         name: "Juan Molina",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "4",
         name: "Neider Estupiñan",
+        goles: 1,
+      },      {
+        id: "16",
+        name: "Emanuel Guerrero",
+        goles: 1,
+      },      {
+        id: "5",
+        name: "mathias Manzano",
+        goles: 1,
+      },
+      {
+        id: "8",
+        name: "Alex Arciniegas",
         goles: 1,
       },
     ],

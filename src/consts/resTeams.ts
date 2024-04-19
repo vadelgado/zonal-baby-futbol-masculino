@@ -184,16 +184,16 @@ export const RES_TEAMS = [
   {
     id: "4",
     name: "Fut. Estrellas Ipiales.",
-    PJ: 1+1,
-    PG: 1+1,
-    PE: 0+0,
-    PP: 0+0,
+    PJ: 1+1+1,
+    PG: 1+1+1,
+    PE: 0+0+0,
+    PP: 0+0+0,
 
-    GF: 4+12,
-    GC: 1+2,    
+    GF: 4+12+3,
+    GC: 1+2+1,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+0,
+    TR: 0+0+0,
   },
   {
     id: "3",
@@ -212,15 +212,15 @@ export const RES_TEAMS = [
   {
     id: "2",
     name: "Sueño Fútbol Cumbal.",
-    PJ: 1+1,
-    PG: 1+0,
-    PE: 0+0,
-    PP: 0+1,
+    PJ: 1+1+1,
+    PG: 1+0+0,
+    PE: 0+0+0,
+    PP: 0+1+1,
 
-    GF: 3+0,
-    GC: 2+1,    
+    GF: 3+0+1,
+    GC: 2+1+3,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+1,
+    TR: 0+0+0,
   },
 ] as const;

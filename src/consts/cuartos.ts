@@ -1,7 +1,7 @@
 export const RES_CUARTOS = [
   {
     id: "1",
-    name: "01",
+    name: "Fut. Estrellas Ipiales.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -13,7 +13,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "2",
-    name: "02",
+    name: "Asoc. Dep. Pasto.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -25,7 +25,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "3",
-    name: "03",
+    name: "Esc. W.A.Mora Samaniego",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -37,7 +37,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "4",
-    name: "04",
+    name: "CAR Nariño.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -49,7 +49,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "5",
-    name: "05",
+    name: "Leones FC Pasto",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -61,7 +61,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "6",
-    name: "06",
+    name: "Esc. Dep. Pasto '13.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -73,7 +73,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "7",
-    name: "07",
+    name: "Sporting de Nariño.",
     PJ: 0,
     PG: 0,
     PE: 0,
@@ -85,7 +85,7 @@ export const RES_CUARTOS = [
   },
   {
     id: "8",
-    name: "08",
+    name: "Atlético Sucre Ipiales",
     PJ: 0,
     PG: 0,
     PE: 0,
