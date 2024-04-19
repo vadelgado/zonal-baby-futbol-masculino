@@ -86,16 +86,16 @@ export const RES_TEAMS = [
   {
     id: "11",
     name: "MPB Ricaurte.",
-    PJ: 1+1,
-    PG: 0+0,
-    PE: 0+0,
-    PP: 1+1,
+    PJ: 1+1+1,
+    PG: 0+0+0,
+    PE: 0+0+0,
+    PP: 1+1+1,
 
-    GF: 0+1,
-    GC: 1+3,    
+    GF: 0+1+0,
+    GC: 1+3+1,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+0,
+    TR: 0+0+0,
   },
   {
     id: "10",
@@ -114,16 +114,16 @@ export const RES_TEAMS = [
   {
     id: "9",
     name: "Atlético Sucre Ipiales",
-    PJ: 1+1,
-    PG: 0+0,
-    PE: 1+0,
-    PP: 0+1,
+    PJ: 1+1+1,
+    PG: 0+0+1,
+    PE: 1+0+0,
+    PP: 0+1+0,
 
-    GF: 2+0,
-    GC: 2+2,    
+    GF: 2+0+1,
+    GC: 2+2+0,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+0,
+    TR: 0+0+0,
   },
   {
     id: "8",

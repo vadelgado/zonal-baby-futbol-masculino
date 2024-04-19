@@ -259,6 +259,11 @@ export const RES_GOLEADORES = [
         name: "Camilo Portilla",
         goles: 1,
       },
+      {
+        id: "20",
+        name: "Luis Ipiales",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [{}],
     tarjetasRojas: [{}],
