@@ -142,16 +142,16 @@ export const RES_TEAMS = [
   {
     id: "7",
     name: "Asoc. Dep. Pasto.",
-    PJ: 1+1,
-    PG: 1+1,
-    PE: 0+0,
-    PP: 0+0,
+    PJ: 1+1+1,
+    PG: 1+1+1,
+    PE: 0+0+0,
+    PP: 0+0+0,
 
-    GF: 8+6,
-    GC: 2+3,    
+    GF: 8+6+4,
+    GC: 2+3+0,    
     
-    TA: 0+1,
-    TR: 0+0,
+    TA: 0+1+0,
+    TR: 0+0+0,
   },
   {
     id: "6",
@@ -170,16 +170,16 @@ export const RES_TEAMS = [
   {
     id: "5",
     name: "Alcaldía Pupiales.",
-    PJ: 1+1,
-    PG: 0+0,
-    PE: 0+0,
-    PP: 1+1,
+    PJ: 1+1+1,
+    PG: 0+0+0,
+    PE: 0+0+0,
+    PP: 1+1+1,
 
-    GF: 0+0,
-    GC: 4+5,    
+    GF: 0+0+0,
+    GC: 4+5+4,    
     
-    TA: 0+0,
-    TR: 0+0,
+    TA: 0+0+0,
+    TR: 0+0+0,
   },
   {
     id: "4",
