@@ -4,132 +4,147 @@ import Title from "@/components/Title.astro";
 import Subtitle from "@/components/Subtitle.astro";
 import SubtitleFooter from "@/components/SubtitleFooter.astro";
 ---
-
-<Subtitle />
-<Title title="Tabla de Goleadores ⚽" />
-<div class="relative flex items-center justify-center">
-  <img
-    src="babyfutbol.webp"
-    alt="Background Image"
-    class="absolute w-auto h-72 object-cover opacity-15"
-  />
-  <table
-    class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
-  >
-    <thead>
-      <tr class="mb-10 bg-table-green-cabecera text-white p-4">
-        <th class="py-3 font-semibold">Equipo</th>
-        <th class="py-3 font-semibold"># Cam. Nombre Goleador</th>
-        <th class="py-3 font-semibold">Total Goles</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        RES_GOLEADORES.map(
-          (equipo) =>
-        equipo.goleadores &&
-        equipo.goleadores.map((goleador: any) => {
-          if (goleador.goles >= 4) {
-            return (
-          <tr data-key={goleador.id} class="mb-10 bg-table-green p-4">
-            <td class="whitespace-nowrap">{equipo.name}</td>
-            <td class="py-1 px-0 font-semibold whitespace-nowrap">
-              <span class="font-normal">{goleador.id}</span> {goleador.name}
-            </td>
-            <td class="whitespace-nowrap">{goleador.goles}</td>
-          </tr>
-            );
-          }
-          return null;
-        })
-        )
-      }
+<div id="accordion-collapse-ESTADISTICA" data-accordion="collapse-ESTADISTICA">
+  <h2 id="accordion-collapse-ESTADISTICA-heading-3">
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-ESTADISTICA-body-3" aria-expanded="false" aria-controls="accordion-collapse-ESTADISTICA-body-3">
+      <span>👉📊Estadística📈👈</span>
+      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-ESTADISTICA-body-3" class="hidden" aria-labelledby="accordion-collapse-ESTADISTICA-heading-3">
+    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+      <Subtitle />
+      <Title title="Tabla de Goleadores ⚽" />
+      <div class="relative flex items-center justify-center">
+        <img
+          src="babyfutbol.webp"
+          alt="Background Image"
+          class="absolute w-auto h-72 object-cover opacity-15"
+        />
+        <table
+          class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+        >
+          <thead>
+            <tr class="mb-10 bg-table-green-cabecera text-white p-4">
+              <th class="py-3 font-semibold">Equipo</th>
+              <th class="py-3 font-semibold"># Cam. Nombre Goleador</th>
+              <th class="py-3 font-semibold">Total Goles</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              RES_GOLEADORES.map(
+                (equipo) =>
+              equipo.goleadores &&
+              equipo.goleadores.map((goleador: any) => {
+                if (goleador.goles >= 4) {
+                  return (
+                <tr data-key={goleador.id} class="mb-10 bg-table-green p-4">
+                  <td class="whitespace-nowrap">{equipo.name}</td>
+                  <td class="py-1 px-0 font-semibold whitespace-nowrap">
+                    <span class="font-normal">{goleador.id}</span> {goleador.name}
+                  </td>
+                  <td class="whitespace-nowrap">{goleador.goles}</td>
+                </tr>
+                  );
+                }
+                return null;
+              })
+              )
+            }
+            
+          </tbody>
+        </table>
+      </div>
+      <section
+      class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+      >
+      <span class="font-bold"> NOTA:</span>
+      Para la tabla de goleadores se consideran los jugadores que han marcado 4 o más goles en el torneo.
+      </section>
+      <SubtitleFooter />
       
-    </tbody>
-  </table>
+      <Subtitle />
+      <Title title="Tabla Tarjetas Amarillas 🟡" />
+      <div class="relative flex items-center justify-center">
+        <img
+          src="babyfutbol.webp"
+          alt="Background Image"
+          class="absolute w-auto h-72 object-cover opacity-15"
+        />
+        <table
+          class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+        >
+          <thead>
+            <tr class="mb-10 bg-table-green-cabecera text-white p-4">
+              <th class="py-3 font-semibold">Equipo</th>
+              <th class="py-3 font-semibold"># Cam. Nombre Goleador</th>
+              <th class="py-3 font-semibold">Total Tarjetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              RES_GOLEADORES.map(
+                (equipo) =>
+                  equipo.tarjetasAmarillas &&
+                  equipo.tarjetasAmarillas.map((tarjeta: any) => (
+                    <tr data-key={tarjeta.id} class="mb-10 bg-table-green p-4">
+                      <td class="whitespace-nowrap">{equipo.name}</td>
+                      <td class="py-1 px-0 font-semibold whitespace-nowrap">
+                        <span class="font-normal">{tarjeta.id}</span> {tarjeta.name}
+                      </td>
+                      <td class="whitespace-nowrap">{tarjeta.amarillas}</td>
+                    </tr>
+                  ))
+              )
+            }
+          </tbody>
+        </table>
+      </div>
+      <SubtitleFooter />
+      
+      <Subtitle />
+      <Title title="Tabla Tarjetas Rojas 🔴" />
+      <div class="relative flex items-center justify-center">
+        <img
+          src="babyfutbol.webp"
+          alt="Background Image"
+          class="absolute w-auto h-72 object-cover opacity-15"
+        />
+        <table
+          class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
+        >
+          <thead>
+            <tr class="mb-10 bg-table-green-cabecera text-white p-4">
+              <th class="py-3 font-semibold">Equipo</th>
+              <th class="py-3 font-semibold"># Cam. Nombre Goleador</th>
+              <th class="py-3 font-semibold">Total Tarjetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              RES_GOLEADORES.map(
+                (equipo) =>
+                  equipo.tarjetasRojas &&
+                  equipo.tarjetasRojas.map((tarjeta: any) => (
+                    <tr data-key={tarjeta.id} class="mb-10 bg-table-green p-4">
+                      <td class="whitespace-nowrap">{tarjeta.name && equipo.name}</td>
+                      <td class="py-1 px-0 font-semibold whitespace-nowrap">
+                        <span class="font-normal">{tarjeta.id}</span> {tarjeta.name}
+                      </td>
+                      <td class="whitespace-nowrap">{tarjeta.rojas}</td>
+                    </tr>
+                  ))
+              )
+            }
+          </tbody>
+        </table>
+      </div>
+      <SubtitleFooter />
+      
+    </div>
+  </div>
 </div>
-<section
-class="text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
->
-<span class="font-bold"> NOTA:</span>
-Para la tabla de goleadores se consideran los jugadores que han marcado 4 o más goles en el torneo.
-</section>
-<SubtitleFooter />
 
-<Subtitle />
-<Title title="Tabla Tarjetas Amarillas 🟡" />
-<div class="relative flex items-center justify-center">
-  <img
-    src="babyfutbol.webp"
-    alt="Background Image"
-    class="absolute w-auto h-72 object-cover opacity-15"
-  />
-  <table
-    class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
-  >
-    <thead>
-      <tr class="mb-10 bg-table-green-cabecera text-white p-4">
-        <th class="py-3 font-semibold">Equipo</th>
-        <th class="py-3 font-semibold"># Cam. Nombre Goleador</th>
-        <th class="py-3 font-semibold">Total Tarjetas</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        RES_GOLEADORES.map(
-          (equipo) =>
-            equipo.tarjetasAmarillas &&
-            equipo.tarjetasAmarillas.map((tarjeta: any) => (
-              <tr data-key={tarjeta.id} class="mb-10 bg-table-green p-4">
-                <td class="whitespace-nowrap">{equipo.name}</td>
-                <td class="py-1 px-0 font-semibold whitespace-nowrap">
-                  <span class="font-normal">{tarjeta.id}</span> {tarjeta.name}
-                </td>
-                <td class="whitespace-nowrap">{tarjeta.amarillas}</td>
-              </tr>
-            ))
-        )
-      }
-    </tbody>
-  </table>
-</div>
-<SubtitleFooter />
-
-<Subtitle />
-<Title title="Tabla Tarjetas Rojas 🔴" />
-<div class="relative flex items-center justify-center">
-  <img
-    src="babyfutbol.webp"
-    alt="Background Image"
-    class="absolute w-auto h-72 object-cover opacity-15"
-  />
-  <table
-    class="w-full text-center text-black text-primary text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl"
-  >
-    <thead>
-      <tr class="mb-10 bg-table-green-cabecera text-white p-4">
-        <th class="py-3 font-semibold">Equipo</th>
-        <th class="py-3 font-semibold"># Cam. Nombre Goleador</th>
-        <th class="py-3 font-semibold">Total Tarjetas</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        RES_GOLEADORES.map(
-          (equipo) =>
-            equipo.tarjetasRojas &&
-            equipo.tarjetasRojas.map((tarjeta: any) => (
-              <tr data-key={tarjeta.id} class="mb-10 bg-table-green p-4">
-                <td class="whitespace-nowrap">{tarjeta.name && equipo.name}</td>
-                <td class="py-1 px-0 font-semibold whitespace-nowrap">
-                  <span class="font-normal">{tarjeta.id}</span> {tarjeta.name}
-                </td>
-                <td class="whitespace-nowrap">{tarjeta.rojas}</td>
-              </tr>
-            ))
-        )
-      }
-    </tbody>
-  </table>
-</div>
-<SubtitleFooter />
