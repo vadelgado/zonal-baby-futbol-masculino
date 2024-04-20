@@ -198,6 +198,21 @@ export const RES_GOLEADORES = [
         name: "Lucas Gomez",
         goles: 1,
       },
+      {
+        id: "10",
+        name: "Isaac Rosero",
+        goles: 1,
+      },
+      {
+        id: "7",
+        name: "Andres Zuluaga",
+        goles: 1,
+      },
+      {
+        id: "16",
+        name: "Yair Yampuzan",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -571,6 +586,11 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Emmanuel Jojoa",
+        amarillas: 1,
+      },
+      {
+        id: "3",
+        name: "Santiago Torres",
         amarillas: 1,
       },
     ],
