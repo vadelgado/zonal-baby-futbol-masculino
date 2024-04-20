@@ -209,12 +209,12 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Nikolas Gonzales",
-        goles: 1,
+        goles: 1+2,
       },
       {
         id: "13",
         name: "Lucas Gomez",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "10",
@@ -241,6 +241,11 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Nicolas Gonzales",
+        amarillas: 1,
+      },
+      {
+        id: "7",
+        name: "Andres Zuluaga",
         amarillas: 1,
       },
     ],
