@@ -6,7 +6,7 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Ferney Urbina",
-        goles: 2+1,
+        goles: 2 + 1,
       },
       {
         id: "17",
@@ -29,7 +29,7 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Zlatan Bastidas",
-        goles: 1+1,
+        goles: 1 + 1,
       },
       {
         id: "7",
@@ -123,7 +123,7 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Manuel Burbano",
-        goles: 1+2,
+        goles: 1 + 2,
       },
     ],
     tarjetasAmarillas: [
@@ -147,12 +147,12 @@ export const RES_GOLEADORES = [
       {
         id: "1",
         name: "Juan Guerrero",
-        goles: 1+1,
+        goles: 1 + 1,
       },
       {
         id: "16",
         name: "Camilo Almeida",
-        goles: 2+2,
+        goles: 2 + 2,
       },
     ],
     tarjetasAmarillas: [
@@ -282,7 +282,7 @@ export const RES_GOLEADORES = [
       {
         id: "17",
         name: "Manuel Belalcazar",
-        goles: 1+1,
+        goles: 1 + 1,
       },
       {
         id: "11",
@@ -301,7 +301,13 @@ export const RES_GOLEADORES = [
       },
     ],
     tarjetasAmarillas: [{}],
-    tarjetasRojas: [{}],
+    tarjetasRojas: [
+      {
+        id: "0",
+        name: "Tribuna",
+        rojas: 1,
+      },
+    ],
   },
   {
     id: "8",
@@ -318,11 +324,13 @@ export const RES_GOLEADORES = [
         goles: 4,
       },
     ],
-    tarjetasAmarillas: [      {
-      id: "2",
-      name: "Felipe Villarreal",
-      amarillas: 1,
-    },],
+    tarjetasAmarillas: [
+      {
+        id: "2",
+        name: "Felipe Villarreal",
+        amarillas: 1,
+      },
+    ],
     tarjetasRojas: [{}],
   },
   {
@@ -347,22 +355,24 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Daniel España",
-        goles: 7+2,
+        goles: 7 + 2 + 2,
       },
       {
         id: "9",
         name: "Juan Molina",
-        goles: 1+1,
+        goles: 1 + 1,
       },
       {
         id: "4",
         name: "Neider Estupiñan",
         goles: 1,
-      },      {
+      },
+      {
         id: "16",
         name: "Emanuel Guerrero",
         goles: 1,
-      },      {
+      },
+      {
         id: "5",
         name: "mathias Manzano",
         goles: 1,
@@ -370,6 +380,11 @@ export const RES_GOLEADORES = [
       {
         id: "8",
         name: "Alex Arciniegas",
+        goles: 1,
+      },
+      {
+        id: "13",
+        name: "Jose Ceron",
         goles: 1,
       },
     ],
@@ -389,7 +404,7 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Felipe Ortega",
-        goles: 2+1,
+        goles: 2 + 1,
       },
       {
         id: "13",
@@ -443,8 +458,19 @@ export const RES_GOLEADORES = [
         name: "Tomas Rueda",
         amarillas: 1,
       },
+      {
+        id: "1",
+        name: "Nicolas Sanchez",
+        amarillas: 1,
+      },
     ],
-    tarjetasRojas: [{}],
+    tarjetasRojas: [
+      {
+        id: "D.T.",
+        name: "Jaime Benavides",
+        rojas: 1,
+      },
+    ],
   },
   {
     id: "5",
@@ -465,17 +491,17 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Kevin Sevillano",
-        goles: 3+1,
+        goles: 3 + 1,
       },
       {
         id: "6",
         name: "Juan Narvaez",
-        goles: 2+1,
+        goles: 2 + 1,
       },
       {
         id: "7",
         name: "Sebastian Cabezas",
-        goles: 2+2,
+        goles: 2 + 2,
       },
       {
         id: "5",
@@ -490,12 +516,12 @@ export const RES_GOLEADORES = [
       {
         id: "11",
         name: "Gabriel Chungana",
-        goles: 2+1,
+        goles: 2 + 1,
       },
       {
         id: "16",
         name: "Jesus Acosta",
-        goles: 1+1,
+        goles: 1 + 1,
       },
       {
         id: "0",
