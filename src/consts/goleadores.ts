@@ -34,12 +34,12 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Santiago Acosta",
-        goles: 1,
+        goles: 1+2,
       },
       {
         id: "11",
         name: "Santiago Rubio",
-        goles: 3,
+        goles: 3+1,
       },
       {
         id: "2",
@@ -56,6 +56,14 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Thiago Mafla",
+        amarillas: 1,
+      },{
+        id: "7",
+        name: "Santiago Acosta",
+        amarillas: 1,
+      },{
+        id: "17",
+        name: "Marimiliano Gonzalez",
         amarillas: 1,
       },
     ],
@@ -154,6 +162,12 @@ export const RES_GOLEADORES = [
         name: "Camilo Almeida",
         goles: 2 + 2,
       },
+      ,
+      {
+        id: "9",
+        name: "Jean Benavides",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -169,10 +183,14 @@ export const RES_GOLEADORES = [
       {
         id: "1",
         name: "Juan Guerrero",
-        amarillas: 1,
+        amarillas: 1+2,
       },
     ],
-    tarjetasRojas: [{}],
+    tarjetasRojas: [      {
+      id: "1",
+      name: "Juan Guerrero",
+      rojas: 1,
+    },],
   },
   {
     id: "12",
