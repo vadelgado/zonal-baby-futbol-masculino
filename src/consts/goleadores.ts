@@ -282,7 +282,7 @@ export const RES_GOLEADORES = [
       {
         id: "17",
         name: "Manuel Belalcazar",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "11",
@@ -292,6 +292,11 @@ export const RES_GOLEADORES = [
       {
         id: "20",
         name: "Luis Ipiales",
+        goles: 1,
+      },
+      {
+        id: "9",
+        name: "Anderson Ovalle",
         goles: 1,
       },
     ],
@@ -490,7 +495,7 @@ export const RES_GOLEADORES = [
       {
         id: "16",
         name: "Jesus Acosta",
-        goles: 1,
+        goles: 1+1,
       },
       {
         id: "0",
