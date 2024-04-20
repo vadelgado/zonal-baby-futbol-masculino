@@ -123,7 +123,7 @@ export const RES_TEAMS = [
     GC: 2+2+0+1,    
     
     TA: 0+0+0+0,
-    TR: 0+0+0+0,
+    TR: 0+0+0+2,
   },
   {
     id: "8",
