@@ -46,6 +46,11 @@ export const RES_GOLEADORES = [
         name: "Santiago Timana",
         goles: 1,
       },
+      {
+        id: "4",
+        name: "Sebastian Benavides",
+        goles: 1,
+      },
     ],
     tarjetasAmarillas: [
       {
@@ -60,11 +65,16 @@ export const RES_GOLEADORES = [
       },{
         id: "7",
         name: "Santiago Acosta",
-        amarillas: 1,
+        amarillas: 1+1,
       },{
         id: "17",
         name: "Marimiliano Gonzalez",
         amarillas: 1,
+      },
+      {
+        id: "8",
+        name: "Zlatan Bastidas",
+        amarillas: 1 + 1,
       },
     ],
     tarjetasRojas: [
@@ -72,6 +82,25 @@ export const RES_GOLEADORES = [
         id: "6",
         name: "Samuel Vallejo",
         rojas: 1,
+      },
+      {
+        id: "1",
+        name: "Samuel Rodriguez",
+        rojas: 1,
+      },      {
+        id: "8",
+        name: "Zlatan Bastidas",
+        rojas: 1,
+      },
+      {
+        id: "10",
+        name: "Samuel Jimenez",
+        rojas: 1,
+      },
+      {
+        id: "0",
+        name: "Agresiones verbales a la organización árbitros",
+        rojas: 4,
       },
     ],
   },
@@ -343,7 +372,7 @@ export const RES_GOLEADORES = [
       {
         id: "0",
         name: "Tribuna",
-        rojas: 1,
+        rojas: 2,
       },
     ],
   },
@@ -382,13 +411,13 @@ export const RES_GOLEADORES = [
       },
       {
         id: "7",
-        name: "Darek Rodero",
+        name: "Darek Rodelo",
         goles: 1,
       },
       {
         id: "14",
         name: "Emanuel Monzon",
-        goles: 3,
+        goles: 3+1,
       },
       {
         id: "10",
@@ -398,7 +427,7 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Juan Molina",
-        goles: 1 + 1,
+        goles: 1 + 1+1,
       },
       {
         id: "4",
@@ -432,8 +461,32 @@ export const RES_GOLEADORES = [
         name: "Neider Estupiñan",
         amarillas: 1,
       },
+      {
+        id: "5",
+        name: "Matias Manzano",
+        amarillas: 1,
+      },
+      {
+        id: "7",
+        name: "Darek Rodelo",
+        amarillas: 1,
+      },
+      {
+        id: "14",
+        name: "Emanuel Monzon",
+        amarillas: 1,
+      },
+      {
+        id: "9",
+        name: "Juan Molina",
+        amarillas: 1,
+      },
     ],
-    tarjetasRojas: [{}],
+    tarjetasRojas: [      {
+      id: "2",
+      name: "Camilo Arteaga",
+      rojas: 1,
+    },],
   },
   {
     id: "6",
