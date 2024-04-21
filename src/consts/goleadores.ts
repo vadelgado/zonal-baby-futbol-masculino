@@ -243,7 +243,7 @@ export const RES_GOLEADORES = [
       {
         id: "13",
         name: "Lucas Gomez",
-        goles: 1+1,
+        goles: 1+1+1,
       },
       {
         id: "10",
@@ -258,7 +258,7 @@ export const RES_GOLEADORES = [
       {
         id: "16",
         name: "Yair Yampuzan",
-        goles: 1,
+        goles: 1+1,
       },
     ],
     tarjetasAmarillas: [
@@ -275,6 +275,11 @@ export const RES_GOLEADORES = [
       {
         id: "7",
         name: "Andres Zuluaga",
+        amarillas: 1,
+      },
+      {
+        id: "15",
+        name: "Samuel Rodriguez",
         amarillas: 1,
       },
     ],
@@ -422,7 +427,7 @@ export const RES_GOLEADORES = [
       {
         id: "10",
         name: "Daniel España",
-        goles: 7 + 2 + 2,
+        goles: 7 + 2 + 2 +1,
       },
       {
         id: "9",
@@ -479,6 +484,11 @@ export const RES_GOLEADORES = [
       {
         id: "9",
         name: "Juan Molina",
+        amarillas: 1,
+      },
+      {
+        id: "12",
+        name: "Daniel España",
         amarillas: 1,
       },
     ],
